@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能客服_聊天机器人_客服机器人-云问科技</title>
+    <meta name="keywords" content="聊天机器人,客服系统,智能客服,智能客服机器人,机器客服,智能IVR,客服机器人,外呼机器人,电话机器人,服务机器人,智能大屏,智能机器人">
+    <meta name="description" content="云问专注于智能客服机器人的研发，是中国领先的互联网人工智能技术服务提供商之一，运用国内最先进的人工智能技术，助力企业客服和管理部门为用户提供精准的智能客服和互动营销服务。云问的产品涵盖智能服务、机器问答、图像处理、数据分析、舆情分析等人工智能技术产品。">
+    <link rel="shortcut icon" href="./src/img/iyunwen_logo.png">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
+    <link rel="stylesheet" href="./src/css/animate.css">
+    <link rel="stylesheet" href="./minichat/css/minichat.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./src/css/iyunwen_home.css">
+</head>
+
+<body>
+    <!-- 顶部公共菜单 -->
+    <div class="iyunwen-header">
+        <div class="container">
+            <div class="iyunwen-nav">
+                <a class="iyunwen-logo" href="./index.html">
+                    <img src="./src/img/logo_ai.png" alt="智能客服机器人,云问科技">
+                </a>
+                <ul class="iyunwen-nav-list">
+                    <li class="li50 active"><a href="./index.html">首页</a></li>
+                    <li class="has-child">
+                        <a href="javascript:;">产品介绍<i class="glyphicon glyphicon-menu-right pull-right hidden-sm hidden-md hidden-lg"></i></a>
+                        <div class="product_T child-list-container">
+                            <ul class="child-list">
+                                <li><a href="./src/html/iyunwen_product.html">产品概述</a></li>
+                                <li class="last-child"><a href="./src/html/iyunwen_technology.html">核心技术</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;">解决方案<i class="glyphicon glyphicon-menu-right pull-right hidden-sm hidden-md hidden-lg"></i></a>
+                        <div class="solution_C child-list-container">
+                            <ul class="child-list">
+                                <li><a href="./src/html/iyunwen_customer.html">智能客服</a></li>
+                                <li><a href="./src/html/iyunwen_smartSetting.html">企业助手</a></li>
+                                <li><a href="./src/html/iyunwen_goverment.html">智慧政务</a></li>
+                                <li class="last-child"><a href="./src/html/iyunwen_hardware.html">智能硬件</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="iyunwen-link"><a href="./src/html/iyunwen_about.html">关于云问</a></li>
+                    <li class="iyunwen-last-link"><a href="./src/html/iyunwen_news.html">新闻资讯</a></li>
+                    <li class="iyunwen-reg"><a href="http://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">免费注册</a></li>
+                    <li class="iyunwen-login"><a href="http://v3.faqrobot.org/login.html" target="_blank" rel="nofollow">登录</a></li>
+                </ul>
+                <div class="toogle-button-holder"><a class="dg-nav-mobile-button m-close" href="javascript:;"><span class="dg-button-img"></span></a><a class="dg-nav-mobile-button m-more" href="javascript:;"><span class="dg-button-img"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧固定区域 -->
+    <div class="fixedBox">
+        <ul class="fixedBoxList">
+            <li style="display: block;" id="cartboxs" class="fixeBoxLi cart_bd">
+                <span class="fixeBoxSpan hotline"></span><strong>全国热线</strong>
+                <div class="cartBox chatBoxAfter hide">
+                    <img style="width:18px;height:18px;margin: 0 5px 4px 0;vertical-align: middle !important;" src="./src/img/phone.png" alt="全国热线">
+                    <div style="padding: 14px 0;font-size: 16px;display:inline-block;">025-66048806</div>
+                </div>
+            </li>
+            <li class="fixeBoxLi Service"> 
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3385946249&amp;site=qq&amp;menu=yes" rel="nofollow"><span class="fixeBoxSpan onlineKefu"></span> <strong>在线客服</strong></a>
+            </li>
+            <li style="display: none;" id="cartboxs" class="fixeBoxLi cart_bd">
+                <span class="fixeBoxSpan chatting"></span> <strong>扫码交流</strong>
+                <div class="joinddQHover chatBoxAfter hide">
+                    <div>
+                        <img style="width:90px;height:90px;padding:5px;" src="./src/img/dingding.jpg" alt="扫码交流">
+                        <span>使用钉钉扫码加入</span>
+                    </div>
+                </div>
+            </li>
+            <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan backTop"></span> <strong>返回顶部</strong> </li>
+        </ul>
+    </div>
+    <!-- 首页banner -->
+    <div class="banner-container">
+		<div class="container home_container">
+			<div id="tab0" class="tab center animating-enter-up">
+				<div class="gradient-mask"></div>
+
+				<div class="y-row">
+					<div class="layer left-header">
+						<h2>云问全渠道智能客服专家</h2>
+						<p>中国领先的智能机器人服务平台</p>
+						<a class="layer-btn" href="https://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">立即体验</a>
+					</div>
+				</div>
+
+				<a>
+					<div class="banner-row" style="transform: rotateX(0deg) rotateY(0deg);">
+						<div class="layer right-image hover-image banner-image" data-zindex="50">
+							<img src="./src/img/iyunwen_AI1.png" alt="机器客服,云问全渠道智能客服专家">
+						</div>
+
+						<div class="layer right-image hover-image banner-image" data-zindex="100">
+							<img src="./src/img/iyunwen_AI2.png" alt="智能客服,云问智能机器人问答系统">
+						</div>
+
+						<div class="layer right-image hover-image banner-image" data-zindex="150">
+							<img src="./src/img/iyunwen_AI3.png" alt="客服机器人,成熟的行业解决方案">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div id="tab1" class="tab">
+				<div class="gradient-mask"></div>
+
+				<div class="y-row">
+					<div class="layer left-header">
+						<h2>云问智能机器人问答系统</h2>
+						<p>针对不同领域推出虚拟和实体智能机器人、</p>
+						<p>SaaS平台服务以及众多解决方案</p>
+						<a class="layer-btn" href="https://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">立即体验</a>
+					</div>
+				</div>
+
+				<a>
+					<div class="banner-row" style="transform: rotateX(0deg) rotateY(0deg);">
+						<div class="layer right-image hover-image banner-image" data-zindex="50">
+							<img src="./src/img/iyunwen_arrow1.png" alt="机器人">
+						</div>
+
+						<div class="layer right-image hover-image banner-image" data-zindex="100">
+							<img src="./src/img/iyunwen_arrow2.png" alt="智能机器人">
+						</div>
+
+						<div class="layer right-image hover-image banner-image" data-zindex="150">
+							<img src="./src/img/iyunwen_arrow3.png" alt="人工智能">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div id="tab2" class="tab">
+				<div class="gradient-mask"></div>
+
+				<div class="y-row">
+					<div class="layer left-header">
+						<h2>成熟的行业解决方案</h2>
+						<p>高效解决痛点，具有包括电商、金融、政务等近60个行业的解决方案</p>
+						<a class="layer-btn" href="https://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">立即体验</a>
+					</div>
+				</div>
+
+				<a>
+					<div class="banner-row" style="transform: rotateX(0deg) rotateY(0deg);">
+						<div class="layer right-image hover-image banner-image" data-zindex="50">
+							<img src="./src/img/iyunwen_pieces1.png" alt="服务机器人">
+						</div>
+
+						<div class="layer right-image hover-image banner-image" data-zindex="100">
+							<img src="./src/img/iyunwen_pieces2.png" alt="电话机器人">
+						</div>
+
+						<div class="layer right-image hover-image banner-image" data-zindex="150">
+							<img src="./src/img/iyunwen_pieces3.png" alt="外呼机器人">
+						</div>
+					</div>
+				</a>
+			</div>
+			<ul class="banner-tab" style="visibility: visible; margin-left: -65px;" data-spm-anchor-id="5176.8142029.759393.i3.a72376f4lx2ySr">
+				<li locaid="tab0" class="banner-tab-li" data-type="nope" data-index="0" data-spm-anchor-id="5176.8142029.759393.tab0">
+					<svg viewBox="0 0 100 100" style="width: 13px; margin-top: 1.5px;">
+						<path d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90" stroke="rgba(255,255,255,0.2)" stroke-width="10" fill-opacity="0"></path>
+						<path class="stroke" d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90" stroke="#fff" stroke-width="10" fill-opacity="0"
+							style="stroke-dasharray: 282.783, 282.783; stroke-dashoffset: 0;"></path>
+					</svg>
+				</li>
+				<li locaid="tab1" class="banner-tab-li" data-type="nope" data-index="1" data-spm-anchor-id="5176.8142029.759393.tab1">
+					<svg viewBox="0 0 100 100" style="width: 13px; margin-top: 1.5px;" data-spm-anchor-id="5176.8142029.759393.i9.a72376f4lx2ySr">
+						<path d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90" stroke="rgba(255,255,255,0.2)" stroke-width="10" fill-opacity="0"></path>
+						<path class="stroke" d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90" stroke="#fff" stroke-width="10" fill-opacity="0"
+							style="stroke-dasharray: 282.783, 282.783; stroke-dashoffset: 282.783;"></path>
+					</svg>
+				</li>
+				<li locaid="tab2" class="banner-tab-li" data-type="nope" data-index="2" data-spm-anchor-id="5176.8142029.759393.tab2">
+					<svg viewBox="0 0 100 100" style="width: 13px; margin-top: 1.5px;" data-spm-anchor-id="5176.8142029.759393.i8.a72376f4lx2ySr">
+						<path d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90" stroke="rgba(255,255,255,0.2)" stroke-width="10" fill-opacity="0"></path>
+						<path class="stroke" d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90" stroke="#fff" stroke-width="10" fill-opacity="0"
+							style="stroke-dasharray: 282.783, 282.783; stroke-dashoffset: 282.783;"></path>
+					</svg>
+				</li>
+
+			</ul>
+		</div>
+    </div>
+    <!-- 第二部分 -->
+    <div class="SaaSServices-container">
+        <div class="row quick-action">
+            <div class="container">
+                <div class="col-lg-3 col-md-3 col-sm-3 quick-action-item">
+                    <a class="quick-action-box" href="https://v3.faqrobot.org/register.html" rel="nofollow">
+                        <img class="quick-img" src="./src/img/iyunwen_Trial.png" alt="客服系统,无限时免费体验云问机器人">
+                        <div class="quick-desc-box">
+                            <p class="quick-desc-title">立即试用</p>
+                            <p class="quick-desc">无限时免费体验云问机器人</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 quick-action-item">
+                    <a class="quick-action-box" href="./src/html/iyunwen_about.html">
+                        <img class="quick-img" src="./src/img/iyunwen_realize.png" alt="在线客服,全渠道智能服务专家">
+                        <div class="quick-desc-box">
+                            <p class="quick-desc-title">了解云问</p>
+                            <p class="quick-desc">全渠道智能服务专家</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 quick-action-item">
+                    <a class="quick-action-box" href="./src/html/iyunwen_customer.html">
+                        <img class="quick-img" src="./src/img/iyunwen_case.png" alt="智能IVR,超过40000家客户选择云问">
+                        <div class="quick-desc-box">
+                            <p class="quick-desc-title">行业案例</p>
+                            <p class="quick-desc">超过40000家客户选择云问</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 quick-action-item">
+                    <a class="quick-action-box" href="./src/html/iyunwen_helpCenter.html">
+                        <img class="quick-img" src="./src/img/iyunwen_help.png" alt="智能机器人,快速掌握云问机器人使用方法">
+                        <div class="quick-desc-box">
+                            <p class="quick-desc-title">帮助文档</p>
+                            <p class="quick-desc">快速掌握云问机器人使用方法</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="SaaS-head">
+            <h2>领先的SaaS服务提供商</h2>
+            <p class="SaaS-info">为每个企业打造专属服务机器人</p>
+        </div>
+        <div class="row SaaS-content">
+            <div class="container">
+                <div class="col-lg-4 col-md-4 col-sm-4 SaaS-content-item">
+                    <div class="item-box">
+                        <div class="img-area">
+                            <img src="./src/img/iyunwen_costSavings.png" alt="机器人,帮助节约成本">
+                        </div>
+                        <div class="box-header">
+                            <p class="text-center">帮助节约成本</p>
+                        </div>
+                    </div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>
+                                节省85%人工成本
+                            </li>
+                            <li>
+                                客户服务管理支出降低60%
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 SaaS-content-item">
+                    <div class="item-box">
+                        <div class="img-area">
+                            <img src="./src/img/iyunwen_satisfaction.png" alt="人工智能,提升客户满意度">
+                        </div>
+                        <div class="box-header">
+                            <p class="text-center">提升客户满意度</p>
+                        </div>
+                    </div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>
+                                7*24小时毫秒级回复
+                            </li>
+                            <li>
+                                减少响应时间，及时解决客户问题
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 SaaS-content-item">
+                    <div class="item-box">
+                        <div class="img-area">
+                            <img src="./src/img/iyunwen_efficiency.png" alt="智能机器人,拥有更高效率">
+                        </div>
+                        <div class="box-header">
+                            <p class="text-center">拥有更高效率</p>
+                        </div>
+                    </div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>
+                                优化3倍服务效率
+                            </li>
+                            <li>
+                                提升10倍服务量
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 第三部分 -->
+    <div class="technology-container">
+        <div class="technology-head">
+            <h2>核心技术驱动企业智能服务</h2>
+            <p class="technology-info">机器+人工协同合作，让企业服务变得更加智能、高效</p>
+        </div>
+        <div class="row technology-content">
+            <div class="container">
+                <div class="col-lg-3 col-md-3 col-sm-3 technology-content-item">
+                    <h3 class="text-center">数据优势</h3>
+                    <div class="advantage data-advantage">
+                        <ul>
+                            <li class="text-center">
+                                <img src="./src/img/iyunwen_tech1.png" alt="交互数据训练">
+                                <h3>交互数据训练</h3>
+                                <p>日业务交互量超1000万</p>
+                            </li>
+                            <li class="text-center">
+                                <img src="./src/img/iyunwen_tech2.png" alt="语义容量立方">
+                                <h3>语义容量立方</h3>
+                                <p>云问深度行业词林积累</p>
+                            </li>
+                            <li class="text-center">
+                                <img src="./src/img/iyunwen_tech3.png" alt="聊天数据累计" style="width:80px">
+                                <h3>聊天数据累计</h3>
+                                <p>数千万聊天，寒暄内容</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 technology-content-item">
+                    <h3 class="text-center">技术优势</h3>
+                    <div class="advantage technology-advantage">
+                        <ul class="">
+                            <li class="row text-center">
+                                <span class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="./src/img/iyunwen_tech4.png" alt="自动化异构知识加工">
+                                    <h3>自动化异构知识加工</h3>
+                                    <p>提取术语，发现实体，构件图谱全自动流水线</p>
+                                </span>
+                                <span class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="./src/img/iyunwen_tech7.png" alt="深度语义理解">
+                                    <h3>深度语义理解</h3>
+                                    <p>集成表示学习和知识的语义表示，自适应语义表示模型</p>
+                                </span>
+                            </li>
+                            <li class="row text-center">
+                                <span class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="./src/img/iyunwen_tech5.png" alt="多轮上下文交互">
+                                    <h3>多轮上下文交互</h3>
+                                    <p>话题判断准确率81%</p>
+                                </span>
+                                <span class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="./src/img/iyunwen_tech8.png" alt="意图识别">
+                                    <h3>意图识别</h3>
+                                    <p>指令、调侃、咨询、投诉...识别准确率90%以上</p>
+                                </span>
+
+                            </li>
+                            <li class="row text-center">
+                                <span class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="./src/img/iyunwen_tech6.png" alt="深度聊天引擎">
+                                    <h3>深度聊天引擎</h3>
+                                    <p>多策略混合式会话引擎，Dual-LSTM检索评分模型</p>
+                                </span>
+                                <span class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="./src/img/iyunwen_tech9.png" alt="自主强化学习">
+                                    <h3>自主强化学习</h3>
+                                    <p>基于用户反馈的参数调整学习</p>
+                                </span>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3  technology-content-item">
+                    <h3 class="text-center">行业优势</h3>
+                    <div class="advantage industry-advantage">
+                        <ul>
+                            <li class="text-center">
+                                <img src="./src/img/iyunwen_tech10.png" alt="多行业覆盖">
+                                <h3>多行业覆盖</h3>
+                                <p>多行业标杆案例覆盖</p>
+                            </li>
+                            <li class="text-center">
+                                <img src="./src/img/iyunwen_tech12.png" alt="商用化经验">
+                                <h3>商用化经验</h3>
+                                <p>6年智能问答云服务运营</p>
+                            </li>
+                            <li class="text-center">
+                                <img src="./src/img/iyunwen_tech11.png" alt="行业应用方案">
+                                <h3>行业应用方案</h3>
+                                <p>21个行业具体解决方案</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 第四部分 -->
+    <div class="smart-container">
+        <div class="smart-head">
+            <h2>智能自主学习</h2>
+            <p class="smart-info">机器自主学习，未知问题自动聚类，后期维护更轻松</p>
+        </div>
+        <div class="smart-content">
+            <div class="container">
+                <ul>
+                    <li class="col-lg-3 col-md-3 col-sm-3 text-center fragmentation">
+                        <img src="./src/img/iyunwen_fragmentation1.png" alt="碎片化知识自动学习" class=" wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <h4>碎片化知识自动学习</h4>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3 text-center recommendation">
+                        <img src="./src/img/iyunwen_recommendation1.png" alt="相关知识智能推荐" class=" wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <h4>相关知识智能推荐</h4>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3 text-center personality">
+                        <img src="./src/img/iyunwen_personality1.png" alt="知识与服务个性化" class=" wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <h4>知识与服务个性化</h4>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3 text-center knowledgeMap">
+                        <img src="./src/img/iyunwen_knowledgeMap1.png" alt="企业化知识图谱" class=" wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <h4>企业化知识图谱</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 第五部分 -->
+    <div class="multi-channel-container">
+        <div class="channel-head">
+            <h2>多渠道统一服务</h2>
+            <p class="channel-info">业务咨询全渠道覆盖，轻松服务多群体访问</p>
+        </div>
+        <div class="channel-content">
+            <div class="container">
+                <img class="phone_home" src="./src/img/phone_home.png" alt="">
+                <div class="dash-bg wow slideInUp" data-duration="1.5s">
+                    <span class="channel-list channel-weibo wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_weibo.png" alt="微博渠道"> 微博
+                    </span>
+                    <span class="channel-list channel-bigScreen wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_bigScreen.png" alt="大屏渠道"> 大屏
+                    </span>
+                    <span class="channel-list channel-app wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_app.png" alt="App渠道"> App
+                    </span>
+                    <span class="channel-list channel-web wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_web.png" alt="网页渠道"> 网页
+                    </span>
+                    <span class="channel-list channel-wechat wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_wechat.png" alt="微信渠道"> 微信
+                    </span>
+                    <span class="channel-list channel-H5 wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_H5.png" alt="H5渠道"> H5
+                    </span>
+                    <span class="channel-list channel-ding wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_ding.png" alt="钉钉渠道"> 钉钉
+                    </span>
+                    <span class="channel-list channel-QQ wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_QQ.png" alt="QQ渠道"> QQ
+                    </span>
+                    <span class="channel-list channel-robot wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_robot.png" alt="实体机器人渠道"> 实体机器人
+                    </span>
+                    <span class="channel-list channel-BBS wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/iyunwen_BBS.png" alt="BBS渠道"> 论坛
+                    </span>
+                    <span class="channel-list iyunwen wow pulse" data-wow-duration="1.5s" data-wow-iteration="infinite">
+                        <img src="./src/img/logo_yun.png" alt="云问">
+                    </span>
+                </div>
+                <a class="iyunwen-btn" href="./src/html/iyunwen_technology.html">查看更多</a>
+            </div>
+        </div>
+    </div>
+    <!-- 第六部分 -->
+    <div class="industry-container">
+        <div class="industry-part1">
+            <h3 class="text-center">目前已有超过40000家用户选择云问，覆盖近60个行业</h3>
+        </div>
+        <div class="industry-part2">
+            <h3 class="text-center">
+                <span>
+                    他们都在用
+                </span>
+            </h3>
+            <div class="industry-list">
+                <div class="container text-center">
+                    <div class="industry-tab">
+                        <span class="active iyunwen-index-1">电商</span>
+                        |
+                        <span class="iyunwen-index-2">政务</span>
+                        |
+                        <span class="iyunwen-index-3">金融</span>
+                        |
+                        <span class="iyunwen-index-4">IT</span>
+                        |
+                        <span class="iyunwen-index-5">文化教育</span>
+                        |
+                        <span class="iyunwen-index-6">电子产品</span>
+                        |
+                        <span class="iyunwen-index-7">消费服务</span>
+                        |
+                        <span class="iyunwen-index-8">企业内部</span>
+                    </div>
+                    <div class="industry-content">
+                        <a class="indusrty-left-btn">
+                            <img src="./src/img/leftBtn.png" alt="">
+                        </a>
+                        <!-- 电商 -->
+                        <div class="industry-content-item active" data-index="iyunwen-index-1">
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce1.png" alt="乐视商城">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce2.png" alt="百程旅行网">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce3.png" alt="当当">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce4.png" alt="淘淘网">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce5.png" alt="极客修">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce6.png" alt="蜜芽">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce7.png" alt="欧冶电商">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce8.png" alt="拼多多">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce9.png" alt="自如">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce10.png" alt="途虎养车">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-commerce/e-commerce11.png" alt="优品惠">
+                            </span>
+                            <span class="search-more" data-toggle="modal" data-target="#eCommerceModal">
+                                查看更多
+                            </span>
+                        </div>
+                        <!-- 政务 -->
+                        <div class="industry-content-item" data-index="iyunwen-index-2">
+                            <span>
+                                <img src="./src/img/government/government1.png" alt="国家电网">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government2.png" alt="东莞工商">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government3.png" alt="广东工商">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government4.png" alt="广州公共资源">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government5.png" alt="海南省人民政府">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government6.png" alt="贵州质量监督">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government7.png" alt="湖北地税">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government8.png" alt="贵州人力资源">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government9.png" alt="湖北工商行政">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government10.png" alt="湖北交通运输">
+                            </span>
+                            <span>
+                                <img src="./src/img/government/government11.png" alt="湖北新闻出版社">
+                            </span>
+                            <span class="search-more" data-toggle="modal" data-target="#governmentModal">
+                                查看更多
+                            </span>
+                        </div>
+                        <!-- 金融 -->
+                        <div class="industry-content-item" data-index="iyunwen-index-3">
+                            <span>
+                                <img src="./src/img/finance/finance1.png" alt="ppmoney">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance2.png" alt="51信用卡">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance3.png" alt="承德银行">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance4.png" alt="福建农村信用社">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance5.png" alt="富德生命人寿">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance6.png" alt="工商银行">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance7.png" alt="国泰人寿">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance8.png" alt="国泰基金">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance9.png" alt="华夏保险">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance10.png" alt="火币">
+                            </span>
+                            <span>
+                                <img src="./src/img/finance/finance11.png" alt="金联储">
+                            </span>
+                            <span class="search-more" data-toggle="modal" data-target="#financeModal">
+                                查看更多
+                            </span>
+
+                        </div>
+                        <!-- IT -->
+                        <div class="industry-content-item" data-index="iyunwen-index-4">
+                            <span>
+                                <img src="./src/img/IT/IT1.png" alt="中创软件">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT2.png" alt="360商城">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT3.png" alt="东软">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT4.png" alt="金蝶">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT5.png" alt="巨人网络">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT6.png" alt="浪潮">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT7.png" alt="西奥科技">
+                            </span>
+                            <span>
+                                <img src="./src/img/IT/IT8.png" alt="盛大游戏">
+                            </span>
+
+                        </div>
+                        <!-- 文化教育 -->
+                        <div class="industry-content-item" data-index="iyunwen-index-5">
+                            <span>
+                                <img src="./src/img/education/education1.png" alt="麦伦文化">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education2.png" alt="四川成隆">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education3.png" alt="南京大学">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education4.png" alt="榕树下">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education5.png" alt="赛壹赛">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education6.png" alt="首都师范大学">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education7.png" alt="南京邮电大学">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education8.png" alt="学而思培训">
+                            </span>
+                            <span>
+                                <img src="./src/img/education/education9.png" alt="西安科技大学">
+                            </span>
+
+                        </div>
+                        <!-- 电子产品 -->
+                        <div class="industry-content-item" data-index="iyunwen-index-6">
+                            <span>
+                                <img src="./src/img/e-products/e-products1.png" alt="海尔">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products2.png" alt="博世">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products3.png" alt="海康威视">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products4.png" alt="海信">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products5.png" alt="华为">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products6.png" alt="金立">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products7.png" alt="美的">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products8.png" alt="西门子">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products9.png" alt="一加手机">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products10.png" alt="中控">
+                            </span>
+                            <span>
+                                <img src="./src/img/e-products/e-products11.png" alt="酷派">
+                            </span>
+                            <span class="search-more" data-toggle="modal" data-target="#eProductsModal">
+                                查看更多
+                            </span>
+                        </div>
+                        <!-- 消费服务 -->
+                        <div class="industry-content-item" data-index="iyunwen-index-7">
+                            <span>
+                                <img src="./src/img/consumption/consumption1.png" alt="奇瑞汽车">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption2.png" alt="凯翼汽车">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption3.png" alt="贝因美">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption4.png" alt="natural">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption5.png" alt="无限极">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption6.png" alt="安然纳米">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption7.png" alt="上海家化">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption8.png" alt="东呈">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption9.png" alt="华住酒店">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption10.png" alt="首旅如家">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption11.png" alt="美宜佳">
+                            </span>
+                            <span>
+                                <img src="./src/img/consumption/consumption12.png" alt="索菲亚">
+                            </span>
+                        </div>
+                        <!-- 企业内部 -->
+                        <div class="industry-content-item" data-index="iyunwen-index-8">
+                            <span>
+                                <img src="./src/img/enterprise/enterprise1.png" alt="东软">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise2.png" alt="博世">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise3.png" alt="华勤">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise4.png" alt="华住">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise5.png" alt="首旅如家">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise6.png" alt="中国太平">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise7.png" alt="美的">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise8.png" alt="中国建投">
+                            </span>
+                            <span>
+                                <img src="./src/img/enterprise/enterprise9.png" alt="西门子">
+                            </span>
+
+
+                        </div>
+                        <a class="indusrty-right-btn">
+                            <img src="./src/img/rightBtn.png" alt="">
+                        </a>
+                        <!-- 政务模态框 -->
+                        <div class="modal fade" id="governmentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="government-modal container">
+                                <span>
+                                    <img src="./src/img/government/more/1.png" alt="东莞">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/2.png" alt="东湖公安局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/3.png" alt="广东工商行政">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/4.png" alt="广州公共资源">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/5.png" alt="贵州人力财务">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/6.png" alt="贵州质量技术监督">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/7.png" alt="海南省人民政府">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/8.png" alt="湖北地税">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/9.png" alt="湖北工商行政局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/10.png" alt="湖北交通运输厅">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/11.png" alt="湖北新闻出版社">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/12.png" alt="黄石地方税务局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/13.png" alt="吉林省国家税务局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/14.png" alt="济南食品药品监督局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/15.png" alt="中国赫章">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/16.png" alt="中国毕节">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/17.png" alt="江苏省版权局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/18.png" alt="天津市财务局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/19.png" alt="辽宁省国家税务局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/20.png" alt="黔南政府">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/21.png" alt="沈阳税务局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/22.png" alt="四川省交通运输局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/23.png" alt="内蒙古公安局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/24.png" alt="遵义红花岗">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/25.png" alt="贵州大方">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/26.png" alt="云浮市人民政府">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/27.png" alt="中国忻州">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/28.png" alt="尤里司法">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/29.png" alt="海南省外事侨务">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/30.png" alt="黄石地方税务局">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/31.png" alt="国家电网">
+                                </span>
+                                <span>
+                                    <img src="./src/img/government/more/32.png" alt="江南水务">
+                                </span>
+                            </div>
+                        </div>
+                        <!-- 电商模态框 -->
+                        <div class="modal fade" id="eCommerceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="finance-modal container">
+                                <span>
+                                    <img src="./src/img/e-commerce/more/1.png" alt="乐视商城">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/2.png" alt="百程旅行网">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/3.png" alt="当当">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/4.png" alt="淘淘网">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/5.png" alt="极客修">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/6.png" alt="蜜芽">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/7.png" alt="欧冶电商">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/8.png" alt="拼多多">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/9.png" alt="自如">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/10.png" alt="途虎养车">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/11.png" alt="优品惠">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/12.png" alt="汽车超人">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-commerce/more/13.png" alt="猪八戒">
+                                </span>
+                            </div>
+                        </div>
+                        <!-- 金融模态框 -->
+                        <div class="modal fade" id="financeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="finance-modal container">
+                                <span>
+                                    <img src="./src/img/finance/more/1.png" alt="51信用卡">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/2.png" alt="ppmoney">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/3.png" alt="承德银行">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/4.png" alt="福建农村信用社">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/5.png" alt="富德生命人寿">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/6.png" alt="国泰基金">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/7.png" alt="国泰人寿">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/8.png" alt="华夏保险">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/9.png" alt="火币">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/10.png" alt="金联储">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/11.png" alt="浙江民泰银行">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/12.png" alt="你我贷">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/13.png" alt="中国太平">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/14.png" alt="泰山保险">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/15.png" alt="永利宝">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/16.png" alt="招商银行">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/17.png" alt="建设银行">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/18.png" alt="中国建投">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/19.png" alt="中国邮政">
+                                </span>
+                                <span>
+                                    <img src="./src/img/finance/more/20.png" alt="中英人寿">
+                                </span>
+                                <!-- <span>
+                                    <img src="./src/img/finance/more/21.png" alt="浙江民泰">
+                                </span> -->
+                            </div>
+                        </div>
+                        <!-- 电子商务模态框 -->
+                        <div class="modal fade" id="eProductsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="eProducts-modal container">
+                                <span>
+                                    <img src="./src/img/e-products/more/1.png" alt="博世">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/2.png" alt="海尔">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/3.png" alt="海康威视">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/4.png" alt="海信">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/5.png" alt="华为">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/6.png" alt="金立">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/7.png" alt="酷派">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/8.png" alt="美的">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/9.png" alt="西门子">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/10.png" alt="一加">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/11.png" alt="中控">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/12.png" alt="富士康">
+                                </span>
+                                <span>
+                                    <img src="./src/img/e-products/more/13.png" alt="oppo">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第七部分 -->
+    <div class="evaluate-container">
+        <div class="container">
+            <div class="evaluate-head">
+                <h2>用户评价</h2>
+            </div>
+            <div class="evaluate-content">
+                <div class="evaluate-img">
+                    <!-- <div class="evaluate evaluate1" data-index="1"></div> -->
+                        <img class="evaluate evaluate1" src="./src/img/evaluate1.png" alt="首旅如家">
+                    
+                    <!-- <div class="evaluate evaluate2" data-index="2"> -->
+                        <img class="evaluate evaluate2" src="./src/img/evaluate3.png" alt="西奥科技">
+                    <!-- </div> -->
+                    <!-- <div class="evaluate evaluate3" data-index="3"> -->
+                        <img class="evaluate evaluate3" src="./src/img/evaluate2.png" alt="一加手机">
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--公共底部 -->
+    <div class="contact-container">
+        <div class="contact-part1 text-center">
+            <h3 class="text-center">即刻拥有您的专属机器人</h3>
+            <a class="iyunwen-btn" href="https://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">马上体验</a>
+        </div>
+        <div class="contact-part2">
+            <div class="container">
+                <h4>联系我们</h4>
+                <ul class="contact-info row">
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            北京市朝阳区建国路88号SOHO现代城D座909室
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            赵先生 18511321172
+                        </p>
+                    </li>
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            南京市江宁区胜利路89号紫金研发创业中心3号楼4层
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            market@faqrobot.org
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            025-66048806
+                        </p>
+                    </li>
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            广州市天河区林和西路167号威尼国际大厦836室
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-road"></i>
+                            负责区域：广东、广西、湖南、福建、海南
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            何小姐 18620991991
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="contact-wechat row">
+                    <li class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="./src/img/iyunwen_robotQrCode.png" alt="云问科技微信服务号">
+                        <h4>云问科技微信服务号</h4>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="./src/img/iyunwen_QrCode.png" alt="云问科技微信订阅号">
+                        <h4>云问科技微信订阅号</h4>
+                    </li>
+                    <li class="line col-lg-1 col-md-1 col-sm-1"></li>
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <a href="./src/html/iyunwen_helpCenter.html" target="_blank"><button class="btn help-center">帮助中心</button></a>
+                        </p>
+                        <p>
+                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3385946249&amp;site=qq&amp;menu=yes" rel="nofollow"><button class="btn online-service">在线客服</button></a>
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <div class="iyunwen-copyright">
+                    <ul class="footer_nav">
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./src/html/iyunwen_product.html">产品介绍</a></li>
+                        <li><a href="./src/html/iyunwen_customer.html">解决方案</a></li>
+                        <li><a href="./src/html/iyunwen_about.html">关于云问</a></li>
+                        <li><a href="./src/html/iyunwen_news.html">新闻资讯</a></li>
+                        <li><a href="https://v3.faqrobot.org/register.html" rel="nofollow">免费注册</a></li>
+                        <li><a href="https://v3.faqrobot.org/login.html" rel="nofollow">登录</a></li>
+                    </ul>
+                    <hr>
+                    <p>
+                        Copyright &copy; 2012 - 2018 南京云问网络科技有限公司 版权所有&nbsp;&nbsp;
+                        <!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273375137'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273375137%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> -->
+                    </p>
+                    <p>
+                        <a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow">网站备案编号：苏ICP备10216663号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/jquery.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <script src="./src/js/wow.js"></script>
+    <script id="minichat" src="./minichat/js/minichat.js"></script>
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

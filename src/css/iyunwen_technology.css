@@ -1,0 +1,833 @@
+.iyunwen_tech {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 610px;
+  margin-bottom: 40px;
+  padding: 0;
+  color: #fff;
+  background: url("../img/product/tech_banner.png") 0% 0%/100% 100% no-repeat;
+}
+.iyunwen_tech .tab {
+  position: absolute;
+  height: 600px;
+  width: 80%;
+  overflow: hidden;
+}
+.iyunwen_tech .tab h2 {
+  margin-top: 250px;
+  font-size: 38px;
+  color: #fff !important;
+}
+.iyunwen_tech .tab p {
+  margin: 30px auto;
+  font-size: 16px;
+}
+.iyunwen_tech .tab .ani1 {
+  right: 0;
+  top: 30%;
+  position: absolute;
+  height: 400px;
+  /* width: 40%; */
+  overflow: hidden;
+}
+.iyunwen_tech .tab .ani1 .banner-row {
+  width:50%;
+  height:100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+.iyunwen_tech .tab .ani1 .banner-row .layer {
+  position: absolute;
+}
+.iyunwen_tech .tab .ani1 .banner-row .layer img {
+  position: absolute;
+}
+.iyunwen_tech .tab .ani1 .banner-row .layer .doshed {
+  top: 0;
+}
+.iyunwen_tech .tab .ani1 .banner-row .layer .center {
+  right: 35%;
+  top: 0;
+}
+.iyunwen_tech .tab .ani1 .banner-row .right-image {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.iyunwen_tech .tab .ani1 .banner-row .hover-image {
+  padding-top: 100px;
+}
+.iyunwen_tech .tab .center {
+  visibility: visible;
+  z-index: 100;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.iyunwen_tech .lg-button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.iyunwen_tech .lg-button:hover {
+  border-color: #2f96f4;
+}
+
+.animating-enter-up .left-header {
+  -webkit-animation: re-banner-slide-20 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+  animation: re-banner-slide-20 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+}
+
+.animating-enter-up .right-image:first-of-type {
+  -webkit-animation: re-banner-slide-80 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+  animation: re-banner-slide-80 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+}
+
+.animating-enter-up .right-image:nth-of-type(2) {
+  -webkit-animation: re-banner-slide-40 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+  animation: re-banner-slide-40 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+}
+
+.animating-enter-up .right-image:nth-of-type(3) {
+  -webkit-animation: re-banner-slide-60 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+  animation: re-banner-slide-60 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+}
+
+.animating-enter-up .right-image:nth-of-type(4) {
+  -webkit-animation: re-banner-slide-80 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+  animation: re-banner-slide-80 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+}
+
+@-webkit-keyframes re-banner-slide-20 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+  }
+}
+@keyframes re-banner-slide-20 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes re-banner-slide-40 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+  }
+}
+@keyframes re-banner-slide-40 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes re-banner-slide-60 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 60px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+  }
+}
+@keyframes re-banner-slide-60 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 60px, 0);
+    transform: translate3d(0, 60px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes re-banner-slide-80 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes re-banner-slide-80 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+.iyunwen_tech .wrap {
+  width:64px;
+  height:64px;
+  position: relative;
+  margin-left: 182px;
+  margin-top: -65px;
+  transform-style: preserve-3d;
+  animation: cube 10s infinite linear;
+}
+.iyunwen_tech .wrap div{
+  width:64px;
+  height:64px;
+  position: absolute;
+  opacity: 0.8;
+  background: url('../img/product/center.png') no-repeat
+}
+@keyframes cube {
+  from{
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to{
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+.iyunwen_tech .wrap .centerDiv{
+  width:10px;
+  height: 10px;
+  background: #00ffff;
+  border-radius: 50%;
+  opacity: 0.5;
+  left: 32px;
+  top: 32px;
+  box-shadow: 0 0 6px #00ffff;
+}
+.iyunwen_tech .wrap .div1{
+    transform:translateZ(32px);
+}
+.iyunwen_tech .wrap .div2{
+    transform:translateZ(-32px);
+}
+.iyunwen_tech .wrap .div3{
+    transform: rotateX(90deg) translateZ(32px);
+}
+.iyunwen_tech .wrap .div4{
+    transform: rotateX(90deg) translateZ(-32px);
+}
+.iyunwen_tech .wrap .div5{
+    transform: rotateY(90deg) translateZ(32px);
+}
+.iyunwen_tech .wrap .div6{
+    transform: rotateY(90deg) translateZ(-32px);
+}
+.tech_iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom:80px;
+}
+.tech_iframe h2 {
+  margin: 40px auto;
+  text-align: center;
+  color: #2f96f4 !important;
+  font-size: 40px;
+}
+.tech_iframe .col-md-7 {
+  float: inherit;
+  height: auto;
+  margin: 0 auto 40px;
+  padding-left:4%;
+}
+.tech_iframe .col-md-7 li {
+  position: relative;
+  line-height: 24px;
+}
+.tech_iframe .col-md-7 li .circle {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 23%;
+}
+.tech_iframe .col-md-7 li span {
+  display: inline-block;
+  text-indent: 18px;
+}
+.tech_iframe .col-md-12 img{
+  width: 100%;
+  height: 100%;
+}
+.tech_iframe .col-md-10 {
+  position: relative;
+  float: inherit;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto 40px;
+  padding: 0;
+  background: url("../img/product/tech_dashed.png") top center no-repeat;
+}
+.tech_iframe .col-md-10 .tech-dash {
+  margin-left: 20px;
+}
+.tech_iframe .col-md-10 .firstUl {
+  position: absolute;
+  top: 56px;
+  height: 150px;
+  width: 100%;
+}
+.tech_iframe .col-md-10 .firstUl li {
+  color: #2f96f4;
+  text-align: center;
+  position: absolute;
+}
+
+.tech_iframe .col-md-10 .firstUl li a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #2f96f4;
+  text-align: center;
+}
+.tech_iframe .col-md-10 .firstUl li a img {
+  margin-top: 20px;
+}
+.tech_iframe .col-md-10 .firstUl li p {
+  margin: 10px auto;
+}
+.tech_iframe .col-md-10 .firstUl .first-li {
+  left: 0;
+}
+.tech_iframe .col-md-10 .firstUl .two-li {
+  left: 294px;
+}
+.tech_iframe .col-md-10 .firstUl .three-li {
+  left: 580px;
+}
+.tech_iframe .col-md-10 .firstUl .last-li {
+  left: 870px;
+}
+.tech_iframe .col-md-11 {
+  float: inherit;
+  margin: -40px auto 0;
+}
+.tech_iframe .col-md-11 .secondUl {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 240px;
+  margin-bottom: 80px;
+}
+.tech_iframe .col-md-11 .secondUl li {
+  text-align: center;
+  background: #fff;
+  width: 175px;
+  position: absolute;
+  box-shadow: 0px 0px 7px #7cb9f1;
+}
+.tech_iframe .col-md-11 .secondUl li dd {
+  font-weight: normal;
+  line-height: 32px;
+}
+.tech_iframe .col-md-11 .secondUl .first-li {
+  left: 0;
+}
+.tech_iframe .col-md-11 .secondUl .two-li {
+  left: 280px;
+}
+.tech_iframe .col-md-11 .secondUl .three-li {
+  left: 576px;
+}
+.tech_iframe .col-md-11 .secondUl .last-li {
+  left: 852px;
+}
+
+.smartVoice {
+  width: 100%;
+  height: 594px;
+  background: url("../img/product/smartVoice.png") 0% 0%/100% 100% no-repeat;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.smartVoice .container{
+  height: 100%;
+}
+.smartVoice h2 {
+  color: #25C0E7 !important;
+  margin-top: 184px;
+  margin-bottom:40px;
+  font-size: 40px;
+  /* padding: 0 176px 32px 47px; */
+}
+.smartVoice dl {
+  /* padding-left: 47px; */
+}
+.smartVoice dl dt {
+  line-height: 24px;
+  font-weight: normal;
+}
+.smartVoice dl dd {
+  line-height: 24px;
+}
+.smartVoice dl img {
+  margin-right: 10px;
+}
+.smartVoice .col-md-5 {
+  margin-top: 74px;
+}
+.smartVoice .col-md-5 img {
+  width: 100%;
+  height: 100%;
+}
+.smartVoice .phone_circle{
+  display: none;
+}
+.smartVoice .phone_circle img{
+  width: 90%;
+  height: 100%;
+  margin-top: 40%;
+}
+.semanticFlow {
+  margin-bottom: 80px;
+}
+.semanticFlow h2 {
+  margin: 40px auto;
+  text-align: center;
+  color: #2f96f4 !important;
+  font-size: 40px;
+}
+.semanticFlow dl {
+  width: 500px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+.semanticFlow dl dt {
+  line-height: 30px;
+  font-weight: normal;
+}
+.semanticFlow dl dt img {
+  margin-right: 10px;
+}
+.semanticFlow dl dd {
+  line-height: 30px;
+}
+.semanticFlow dl dd img {
+  margin-right: 10px;
+}
+.semanticFlow .col-md-12 {
+  position: relative;
+  width: 800px;
+  height: 820px;
+  text-align: center;
+  margin: -35px auto 0;
+  float: inherit;
+}
+.semanticFlow .col-md-12 img {
+  position: absolute;
+  width: 670px;
+  height: 703px;
+  left: 12%;
+  top: 10%;
+}
+.semanticFlow .col-md-12 .dynamic {
+  width: 800px;
+  height: 820px;
+  left: 0;
+  top: 4%;
+}
+
+.deepKnow {
+  width: 100%;
+  height: 660px;
+  margin-bottom: 40px;
+  background: url("../img/product/deepKnow.png") 0% 0%/100% 100% no-repeat;
+}
+.deepKnow .col-md-6 {
+  color: #fff;
+}
+.deepKnow .col-md-6 .logic1 {
+  margin: 30px 0 20px;
+}
+.deepKnow .col-md-6 .logic2 {
+  margin: 20px 0 0;
+}
+.deepKnow .col-md-6 h2 {
+  margin: 200px auto 40px;
+  text-align: center;
+  color: #25C0E7 !important;
+  font-size: 40px;
+}
+.deepKnow .col-md-6 p {
+  line-height: 24px;
+  font-weight: normal;
+  padding-left: 28%;
+}
+.deepKnow .col-md-6 p .line {
+  color: #25C0E7;
+}
+.deepKnow .col-md-6 dl {
+  padding-left: 33%;
+  width: 78%;
+}
+.deepKnow .col-md-6 dl dd {
+  padding-left: 5%;
+  position: relative;
+}
+.deepKnow .col-md-6 dl dd img {
+  position: absolute;
+  left: -8px;
+  top: 33%;
+  float: left;
+}
+.deepKnow .col-md-6 dl dd .circle {
+  top: 18%;
+}
+.deepKnow .col-md-6 dl dd span {
+  display: inline-block;
+  line-height: 30px;
+}
+
+.semantics {
+  margin-bottom: 80px;
+}
+.semantics h2 {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 40px;
+  color: #2f96f4 !important;
+}
+.semantics .semanticDl {
+  width: 50%;
+  margin: 0 auto;
+  /* padding-left: 82px; */
+}
+.semantics .semanticDl dd {
+  position: relative;
+}
+.semantics .semanticDl dd img {
+  position: absolute;
+  left: 0;
+  top: 34%;
+}
+.semantics .semanticDl dd .block {
+  top: 20%;
+}
+.semantics .semanticDl dd span {
+  display: inline-block;
+  line-height: 30px;
+  text-indent: 18px;
+}
+.semantics .col-md-12 h3 {
+  color: #333;
+  font-size: 26px;
+  margin: 40px auto;
+  text-align: center;
+}
+.semantics .col-md-12 .semantic_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.knowGraph {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 610px;
+  background: url("../img/product/knowGraph.png") 0% 0%/100% 100% no-repeat;
+}
+.knowGraph h2 {
+  font-size: 40px;
+  color: #25C0E7 !important;
+  margin: 220px auto 20px;
+}
+.knowGraph dl {
+  color: #fff;
+  padding-right: 8%;
+}
+.knowGraph dl dd {
+  position: relative;
+}
+.knowGraph dl dd img {
+  position: absolute;
+  left: 0;
+  top: 16%;
+}
+.knowGraph dl dd span {
+  display: inline-block;
+  line-height: 30px;
+  text-indent: 18px;
+}
+.knowGraph .graphList {
+  position: relative;
+  height: 600px;
+}
+.knowGraph .graphList img {
+  position: absolute;
+}
+.knowGraph .graphList .graph1 {
+  left: 56%;
+  bottom: 5%;
+}
+.knowGraph .graphList .graph2 {
+  right: -2%;
+  top: 14%;
+}
+.knowGraph .graphList .graph3 {
+  left: 0;
+  top: 28%;
+}
+.knowGraph .graphList .graph4 {
+  left: 33%;
+  top: 36%;
+}
+.knowGraph .graphList .graph5 {
+  left: 32%;
+  top: 15%;
+}
+.knowGraph .graphList .graph6 {
+  left: 20%;
+  bottom: 5%;
+}
+.knowGraph .graphList .graph7 {
+  right: -10%;
+  top: 39%;
+}
+
+.retrieve {
+  margin-bottom: 80px;
+}
+.retrieve h2 {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 40px;
+  color: #2f96f4 !important;
+}
+.retrieve .row ul {
+  width: 50%;
+  margin: 0 auto 70px;
+}
+.retrieve .row .col-md-12 img{
+  width: 100%;
+  height: 100%;
+}
+.retrieve .row ul li {
+  position: relative;
+}
+.retrieve .row ul li img {
+  position: absolute;
+  left: 0;
+  top: 22%;
+}
+.retrieve .row ul li span{
+  display: inline-block;
+  text-indent: 18px;
+}
+@media (max-width:480px) and (min-width:320px){
+  .iyunwen_tech .tab{
+    width: 100%;
+    height: 380px;
+    left: 0;
+  }
+  .iyunwen_tech{
+    height: 380px;
+  }
+  .iyunwen_tech .tab h2{
+    margin-top: 150px;
+    font-size: 18px;
+  }
+  .iyunwen_tech .tab p{
+    font-size: 14px;
+  }
+  .animating-enter-up .left-header{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+  }
+  .iyunwen_tech .tab .ani1{
+    top: 5%;
+  }
+  .iyunwen_tech .tab .ani1 .banner-row .layer img,.iyunwen_tech .tab .ani1 .banner-row{
+    width: 100%;
+    height: 300px;
+  }
+  .iyunwen_tech .wrap{
+    margin-left: 130px;
+  }
+  .tech_iframe h2,.semanticFlow h2,.semantics h2,.retrieve h2{
+    margin: 20px auto;
+    font-size: 26px;
+  }
+  .tech_iframe .col-md-7 li{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tech_iframe .col-md-7 li .circle{
+    top: 12%;
+  }
+  .smartVoice{
+    height: 300px;
+    background: url('../img/product/phone_product.png') 0% 0%/100% 100% no-repeat;
+  }
+  .smartVoice .container,.smartVoice .container .col-md-12{
+    padding: 0;
+  }
+  .smartVoice .container .col-md-12 .col-md-6{
+    padding-right: 0;
+  }
+  .smartVoice h2,.deepKnow .col-md-6 h2,.knowGraph h2{
+    font-size: 18px;
+    margin: 18px auto;
+  }
+  .smartVoice dl dt,.smartVoice dl dd{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .smartVoice .phone_circle{
+    display: block;
+  }
+  .semanticFlow,.semanticFlow .container,.semanticFlow .row{
+    height: 600px;
+  }
+  .semanticFlow dl{
+    width: 100%;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .semanticFlow dl dt,.semanticFlow dl dd{
+    line-height: 20px;
+  }
+  .semanticFlow .col-md-12{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .semanticFlow .col-md-12 img,.semanticFlow .col-md-12 .dynamic{
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+  .deepKnow{
+    height: 280px;
+  }
+  .deepKnow .container,.deepKnow .container .col-md-12{
+    padding: 0;
+  }
+  .deepKnow .col-md-6 .logic1,.deepKnow .col-md-6 .logic2{
+    width: 100%;
+    height: 100%;
+    margin: 20% auto;
+  }
+  .deepKnow .col-md-6 p{
+    padding-left: 0;
+    line-height: 20px;
+  }
+  .deepKnow .col-md-6 dl{
+    width: 100%;
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .deepKnow .col-md-6 dl dd span{
+    line-height: 16px;
+  }
+  .deepKnow .col-md-6 dl dd img{
+    top: 20%;
+  }
+  .semantics .semanticDl{
+    width: 100%;
+    padding-left: 0;
+  }
+  .semantics .semanticDl dd{
+    line-height: 20px;
+  }
+  .semantics .semanticDl dd .block{
+    top: 10%;
+  }
+  .semantics .semanticDl dd img{
+    top: 15%;
+  }
+  .knowGraph,.knowGraph .graphList{
+    height: 300px;
+  }
+  .knowGraph .container,.knowGraph .container .col-md-12{
+    padding: 0;
+  }
+  .knowGraph dl{
+    padding-right: 0;
+  }
+  .knowGraph dl dd span{
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .knowGraph .graphList img{
+    width: 80px;
+    height: 80px;
+  }
+  .knowGraph dl dd img{
+    top: 5%;
+  }
+  .knowGraph .graphList .graph5{
+    left: 0;
+    top: 8%;
+  }
+  .knowGraph .graphList .graph2,.knowGraph .graphList .graph3{
+    display: none;
+  }
+  .knowGraph .graphList .graph4{
+    left: 30%;
+    top: 35%;
+  }
+  .knowGraph .graphList .graph6{
+    left: 0;
+    bottom: 15%;
+  }
+  .knowGraph .graphList .graph1{
+    right: 6%;
+    bottom: 10%;
+    left:auto;
+  }
+  .knowGraph .graphList .graph7{
+    right: 5%;
+    top: 10%;
+  }
+  .retrieve{
+    margin-bottom: 40px;
+  }
+  .retrieve .row ul{
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .retrieve .row ul li img{
+    top: 14%;
+  }
+  .text-center img{
+    width: 100%;
+    height:100%;
+  }
+  .semanticFlow .text-center img{
+    left:0 !important;
+  }
+}

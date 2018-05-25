@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>帮助中心-云问免费智能问答机器人</title>
+    <link rel="shortcut icon" href="../../src/img/iyunwen_logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../css/iyunwen_helpDetail.css">
+</head>
+<body>
+    <!-- 顶部公共菜单 -->
+    <div class="iyunwen-header">
+        <div class="container">
+            <div class="iyunwen-nav">
+                <a class="iyunwen-logo" href="../../index.html">
+                    <img src="../../src/img/logo_ai.png" alt="在线客服，云问科技">
+                </a>
+                <ul class="iyunwen-nav-list">
+                    <li class="li50"><a href="../../index.html">首页</a></li>
+                    <li class="has-child">
+                        <a href="javascript:;">产品介绍<i class="glyphicon glyphicon-menu-right pull-right hidden-sm hidden-md hidden-lg"></i></a>
+                        <div class="product_T child-list-container">
+                            <ul class="child-list">
+                                <li><a href="./iyunwen_product.html">产品概述</a></li>
+                                <li class="last-child"><a href="./iyunwen_technology.html">核心技术</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;">解决方案<i class="glyphicon glyphicon-menu-right pull-right hidden-sm hidden-md hidden-lg"></i></a>
+                        <div class="solution_C child-list-container">
+                            <ul class="child-list">
+                                <li><a href="./iyunwen_customer.html">智能客服</a></li>
+                                <li><a href="./iyunwen_smartSetting.html">企业助手</a></li>
+                                <li><a href="./iyunwen_goverment.html">智慧政务</a></li>
+                                <li class="last-child"><a href="./iyunwen_hardware.html">智能硬件</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="iyunwen-link"><a href="./iyunwen_about.html">关于云问</a></li>
+                    <li class="iyunwen-last-link"><a href="./iyunwen_news.html">新闻资讯</a></li>
+                    <li class="iyunwen-reg"><a href="http://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">免费注册</a></li>
+                    <li class="iyunwen-login"><a href="http://v3.faqrobot.org/login.html" target="_blank" rel="nofollow">登录</a></li>
+                </ul>
+                <div class="toogle-button-holder"><a class="dg-nav-mobile-button m-close" href="javascript:;"><span class="dg-button-img"></span></a><a class="dg-nav-mobile-button m-more" href="javascript:;"><span class="dg-button-img"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧固定区域 -->
+    <div class="fixedBox">
+        <ul class="fixedBoxList">
+            <li style="display: block;" id="cartboxs" class="fixeBoxLi cart_bd">
+                <span class="fixeBoxSpan hotline"></span><strong>全国热线</strong>
+                <div class="cartBox chatBoxAfter hide">
+                    <img style="width:18px;height:18px;margin: 0 5px 4px 0;vertical-align: middle !important;" src="../../src/img/phone.png" alt="全国热线">
+                    <div style="padding: 14px 0;font-size: 16px;display:inline-block;">025-66048806</div>
+                </div>
+            </li>
+            <li class="fixeBoxLi Service"> 
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3385946249&amp;site=qq&amp;menu=yes"><span class="fixeBoxSpan onlineKefu"></span> <strong>在线客服</strong></a>
+            </li>
+            <li style="display: none;" id="cartboxs" class="fixeBoxLi cart_bd">
+                <span class="fixeBoxSpan chatting"></span> <strong>扫码交流</strong>
+                <div class="joinddQHover chatBoxAfter hide">
+                    <div>
+                        <img style="width:90px;height:90px;padding:5px;" src="../../src/img/dingding.jpg" alt="扫码交流">
+                        <span>使用钉钉扫码加入</span>
+                    </div>
+                </div>
+            </li>
+            <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan backTop"></span> <strong>返回顶部</strong> </li>
+        </ul>
+    </div>
+    <!-- 帮助中心banner -->
+    <div class="iyunwen_helpDetail row">
+        <div class="container">
+        </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="bread_banner">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="../html/iyunwen_helpCenter.html">云问文档帮助中心</a></li>
+                <li class="active">平台介绍</li>
+            </ol>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="plantContent" id="plantForm">
+                            <h2>一、平台介绍
+                                <div class="line"></div>
+                            </h2>
+                            <dl class="contentDl">
+                                <dt>1、什么是云问机器人？</dt>
+                                <dd>云问智能问答机器人是基于自定义的业务库，运用自然语义处理、机器学习等人工智能技术，以机器人的角色模拟人工服务，通过与用户一问一答的形式，智能理解、精确定位用户需要的业务内容，如业务问题的解答、业务数据的查询、业务流程的办理等等。</dd>
+                            </dl>
+                            <dl class="contentDl">
+                                <dt>2、使用云问机器人可以做什么？</dt>
+                                <dd>您可以：为自己的网站搭建一个智能客服机器人或是智能帮助中心；为自己的APP加入智能互动的能力；为自己的微信接入智能服务机器人；总结来说，云问机器人能够帮您和用户的业务交互提供智能互动的能力。</dd>
+                            </dl>
+                            <dl class="contentDl">
+                                <dt>3、云问机器人的收费标准</dt>
+                                <dd>云问机器人对基础的应用不收取任何费用，您可以注册一个账号，在平台上免费搭建一个专属于自己的业务服务机器人。当您有更高的需求时，可以拨打电话025-66048806联系我们的人工客服获取功能更强大的付费版本。我们秉承的理念是，当机器人并未给您带来任何价值时，我们也不应该收取任何费用。</dd>
+                            </dl>
+                        </div>
+                        <div class="guideContent" id="newGuide">
+                            <h2>二、新手指引
+                                <div class="line"></div>
+                            </h2>
+                            <dl class="contentDl">
+                                <dt>1、如何注册机器人？</dt>
+                                <dd>点击网站页面右上角的“免费注册”按钮，在注册页面根据提示信息填写基本资料，成功提交后，即成功注册了云问智能机器人服务。</dd>
+                            </dl>
+                            <dl class="contentDl">
+                                <dt>2、如何完善用户资料？</dt>
+                                <dd>为了您机器人的个性化效果，我们需要您在提交基本资料（注册阶段）后完善用户资料，在管理后台“系统管理”->“企业信息”和“机器人设置”等页面可以“完善用户资料”。</dd>
+                            </dl>
+                            <dl class="contentDl">
+                                <dt>3、如何搭建机器人？</dt>
+                                <dd>登录云问机器人管理平台后，搭建机器人只需两步：<br>
+                                        1) 在“知识库管理”->“添加问题”页面下添加自己的业务问题；<br>
+                                        2) 在“平台对接”模块下，选择自己所需对接的渠道，如网站、APP、微信等，即可创建自己的机器人。</dd>
+                            </dl>
+                        </div>
+                        <div class="knowledge" id="knowledge">
+                            <h2>三、知识库<div class="line"></div></h2>
+                            <div id="addQuestion">
+                                <h3>（一）添加问题</h3>
+                                <p>我们为免费版本的知识库准备了200条问答的容量，如果您需要更多的知识库容量，需要联系客服购买高版本产品。在添加问题答案时，如果答案中包含许多非文本内容，使用富文本在答案中添加图片、表情、声音、超链接等一系列元素。您还可以上传附件增添答案的多样性。 目前我们给您的附件空间分配的大小是100m，如您有更多空间的需求，请拨打电话025-66048806联系我们的人工客服。</p>
+                                <dl class="contentDl">
+                                    <dt>1、答案里面可以添加图片吗？</dt>
+                                    <dd>可以添加图片的，只要通过富文本就能添加图片了哦，添加图片时不能直接拖拽到答案区域，点击“添加图片”按钮，先上传图片。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、答案里面可以添加像word那样的文件吗？</dt>
+                                    <dd>可以添加word、ppt、PDF、excel等文件，通过附件上传即可，上传过程中注意附件大小不能超过5M。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>3、为什么上传文件提示失败？</dt>
+                                    <dd>首先检查上传的附件大小是否已经超过5M，若没有超过，检查总体的附件空间大小是否已满，默认附件总空间的大小是100M。若需要更多空间，请拨打电话025-66048806联系我们的人工客服，获得帮助。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>4、为什么在微信答案里面显示图片的时候有你们的logo？</dt>
+                                    <dd>若答案中有图片，通过微信的答案显示时，只能按照图文的格式显示，因此，默认会显示我们的logo，您可以上传自己的logo，之后便会显示你的企业logo，注意上传时大小符合微信的默认大小，显示时才能正常完整显示。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>5、怎么在答案里面插入视频？</dt>
+                                    <dd>目前通过富文本暂时不能直接上传视频，但是可以通过超链接的方式，将视频通过链接打开，可以先上传视频，然后获取其地址，便可以超链接过去。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>6、附件在手机上怎么不能下载？</dt>
+                                    <dd>目前关于手机下载各种附件的问题，在不同手机上会有不同的情况，目前，ios系统的手机是可以正常下载的，安卓手机会出现不能下载的问题，该问题是微信的拦截导致，可以通过引导至浏览器打开后，再提示下载。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>7、答案里面的图片在手机上打不开？</dt>
+                                    <dd>若您使用的是我们的wap版本的手机界面，答案的显示其实和网页版本是一样的，如果出现图片打不开的情况，请检查上传文件是否有问题。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>8、我的聊天问题是不是添加在知识库里面呢？</dt>
+                                    <dd>为了保证机器人的学习效率和回答准确性，知识库中不宜添加聊天问题，请将您的聊天问答添加至聊天库中。</dd>
+                                </dl>
+                            </div>
+                            <div id="flowIntro">
+                                <h3>（二）流程介绍</h3>
+                                <p>用户可以将复杂的、多步骤、多可能性的问题拆解为一个个的流程，用问答漏斗式引导的形式，一步步地引导访客解决复杂问题。该过程需要用户在添加问题前完全掌握问题引导的步骤，并需要为每个流程项设置访客的选择按钮。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么我设置完流程项，但是每次只回答第一个？</dt>
+                                    <dd>您是否为每个流程项设置了用户选择的按钮？只有通过选择，访客才能往下进行，这里文字按钮的设置，请参见系统的帮助指导。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、为什么机器人回答的是一个完全不相干的答案？</dt>
+                                    <dd>这里最大的可能性是你没有设置流程项，因此机器人找不到步骤答案，报错问答。如果您已经设置了流程项，机器人依然报错，请拨打电话025-66048806联系人工客服。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>3、为什么一定要设置流程描述？</dt>
+                                    <dd>只有设置了流程描述之后，在选择引导的流程项过程时，才能找到对应的项目。</dd>
+                                </dl>
+                            </div>
+                            <div id="importQue">
+                                <h3>（三）导入问题</h3>
+                                <p>支持知识批量导入，自动建立中间过渡表。自动校验导入知识状态，并标注错误情况解释。同一知识不同问法自动归档。业务复杂流程知识亦可批量导入。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么我导入的时候提示没有最小分组？</dt>
+                                    <dd>导入问题的时候所有的问题都要有自己的分类属性，若您导入的时候，问题的分类提示没有，您需要先自己手动添加分类，保证后台有分类才能成功导入。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、流程可以批量导入吗？</dt>
+                                    <dd>不可以的。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>3、导入问题的时候可以让答案里面带有图片吗？</dt>
+                                    <dd>目前我们只支持答案为纯文本的格式，不支持答案里面有图片。</dd>
+                                </dl>
+                            </div>
+                            <div id="intelLearn">
+                                <h3>（四）智能学习</h3>
+                                <p>智能收集访客的提问方式和同一问题的不同问法、自动分析关联，归类同一答案所对应的不同问法，人工可审核添加进知识库中，支持自动归类显示。</p>
+                                <dl class="contentDl">
+                                    <dt>1、智能学习是什么意思？</dt>
+                                    <dd>您点开智能学习的列表之后，可以看见所有机器人自动分析关联的问题，当访客问出问题后机器人并没有直接给出答案，而是推荐了几个答案，并且访客选择了其中的一个答案进行了解，因此机器人自动学习为这两者是相关的问题，你需要人为审核之后，机器人便可在下次出现该情况时，给出确切的回应。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、回答当中的“仅回答”和“回答并学习”有什么区别呢？</dt>
+                                    <dd>“仅回答”是对该访客做出回答，而“回答并学习”是将该问题给出回答并添加到知识库当中。</dd>
+                                </dl>
+                            </div>
+                            <div id="unknowQue">
+                                <h3>（五）未知问题</h3>
+                                <p>未知问题自动收集、展示、人工审核学习等处理、合并处理、忽略相同、永久忽略、重新启用等多种机制。该列表即为所有访客提问而机器人无法回答的问题。客服人员可以在此界面看到所有机器人没有回答上来的问题，以及机器人推送访客未点击的问题。这些问题可以和智能学习一样，给客户推送答案，也可以添加到知识库当中。</p>
+                                <dl class="contentDl">
+                                    <dt>1、未知问题和智能学习有什么不一样？</dt>
+                                    <dd>未知问题是所有访客提问而机器人无法回答的问题；智能学习请参见智能学习的解释。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、未知问题的处理方式都有什么区别？</dt>
+                                    <dd>【忽略】忽略该访客提出的问题。<br>
+                                        【回答】为该问题给出回答，回答方式在回答界面中有详细解释。<br>
+                                        【忽略相同】将该问题忽略，并将相同的未知问题同时忽略。<br>
+                                        【永久忽略】该问题若以后再被问到，无需提醒，机器人直接忽略。
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div id="ignore">
+                                <h3>（六）永久忽略</h3>
+                                <p>做了永久忽略的问题，在下次访客问到该问题时，机器人并不会归到未知问题中让客服人为处理。</p>
+                                <dl class="contentDl">
+                                    <dt>1、永久忽略完了以后的问题去哪了？</dt>
+                                    <dd>永久忽略的问题在“知识库管理”->“知识学习”->“永久忽略”。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、有些问题之前永久忽略了，后来觉得还是有用怎么办？</dt>
+                                    <dd>在永久忽略列表中找到你所需要的问题，在“操作”里面点击。</dd>
+                                </dl>
+                            </div>
+                            <div id="synonym">
+                                <h3>（七）同义词</h3>
+                                <p>如果两个词语您希望在后台语义处理时进行相同的处理，可以将这两个词语添加到同义词里面。同义词每次添加的空间大小为一百个字。</p>
+                                <dl class="contentDl">
+                                    <dt>1、同义词是干嘛的？</dt>
+                                    <dd>同义词的模块是用来让用户添加需要给出相同处理的词语。如：“位置”和“地方”。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、怎么不能同时添加一些同义词？</dt>
+                                    <dd>您需要先检查是否同时添加的同义词字数已经超过了10个字。若大于10个字，系统无法同时添加，您需要分次进行添加。若未大于10个字，却无法添加，您可以拨打电话025-66048806联系我们的人工客服。</dd>
+                                </dl>
+                            </div>
+                            <div id="Professional">
+                                <h3>（八）专业名词</h3>
+                                <p>专业名词是用来存放企业特有的名词，该类名词添加之后会进行特殊处理，不会因为语句的特殊情况被分开与其他文字进行搭配处理，他们只会单独以整体出现。</p>
+                                <dl class="contentDl">
+                                    <dt>1、专业名词是需要添加什么类型的词呢？</dt>
+                                    <dd>您需要添加在业务知识下只能单独以整体出现的词，如：“苹果8”，该词既不会在语句中被分为“苹果”，也不会被分为“8”，只会以整体进行匹配和处理。</dd>
+                                </dl>
+                            </div>
+                            <div id="ChatLibrary">
+                                <h3>（九）聊天库</h3>
+                                <p>聊天库是用来添加用户自定义的聊天问答内容。聊天库与知识库空间是分开的，在访客进行业务问答时，只会在知识库中寻找答案，而在聊天时，通过提取核心语义，机器人会识别聊天内容，从而给出合适的回答。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么有聊天库？和知识库有什么不一样？</dt>
+                                    <dd>聊天库就是用来添加聊天问答的，不会和知识库里面的业务问答弄混，以避免匹配的时候和业务知识混淆。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="netWork" id="netWork">
+                            <h2>四、接入网站<div class="line"></div></h2>
+                            <div id="getCode">
+                                <h3>（一）获取代码</h3>
+                                <dl class="contentDl">
+                                    <dt></dt>
+                                    <dd>第一步：进入“平台对接”->“网页接入”，来到获取代码界面；<br>
+                                        第二步：图标信息填写完成后点击生成代码,点击预览可以查看图标在网页中显示的样式；<br>
+                                        第三步：将生成的代码放到您的网页&lt;body&gt;和&lt;/body&gt;之间的任意位置，便可将咨询图标嵌入网页中；<br>
+                                        第四步：若您想直接获得聊天页面的链接，点击网页上您所设置的咨询图标，进入聊天界面，直接复制界面的地址即可。
+                                        </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="weixin" id="weixin">
+                            <h2>五、对接微信<div class="line"></div></h2>
+                            <div id="gongzhonghao">
+                                <h3>（一）对接公众号教程</h3>
+                                <dl class="contentDl">
+                                    <dt></dt>
+                                    <dd>1、选择“平台对接”->“微信接入”；<br>
+                                        2、点击后选择“添加公众号”<br>
+                                        3、使用公众平台绑定的管理员个人微信号扫描出现的二维码，授权成功后即对接成功。
+                                        </dd>
+                                </dl>
+                            </div>
+                            <div id="menuList">
+                                <h3>（二）自定义菜单使用</h3>
+                                <p>所有对接成功后的微信号，自定义菜单的编辑和发布，全部是在云问机器人后台进行的。之前在微信公众平台中发布的自定义菜单就会全部失效，以云问机器人后台的自定义菜单为准。首先，在云问机器人后台正常使用此功能的前提是您的公众号是拥有自定义菜单接口权限，如果您的公众号是服务号，那么就会自动获取自定义菜单接口权限，如果您的公众号是订阅号，您只有认证后才可以获得。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么提示“微信发布失败：api功能未授权，请确认公众号已获得该接口，可以在公众平台官网-开发者中心页中查看接口权限”？</dt>
+                                    <dd>您没有自定义菜单的接口权限，您的公众号是订阅号，但是并没有认证。如果您的公众号是服务号，请拨打电话025-66048806联系我们的人工客服帮您解决。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、为什么我之前的菜单现在都没有了？-开发者中心页中查看接口权限”？</dt>
+                                    <dd>对接我们的系统之后，您的自定义菜单功能就只能在我们的后台完成。因此您的公众平台原先的自定义菜单就已经失效了。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>3、微信自定义菜单编辑完了之后点击发布，怎么没有反应？</dt>
+                                    <dd>微信发布自定义菜单对于新关注的用户立即生效。对于已关注的用户24小时内生效。你可以先取消关注，然后再关注。如果还是没有生效，可以拨打电话025-66048806联系我们的人工客服帮您解答。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>4、自定义菜单里面可以加视频吗？</dt>
+                                    <dd>可以加视频哦，但是您需要先把视频上传在我们的系统后台中，得到它的静态地址后，便可以添加到网页地址中。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>5、为什么URL找不到？</dt>
+                                    <dd>进入微信列表界面，找到你需要对接的微信号，点击后方“获取对接信息”，便可以看到URL的信息了。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>6、已经对接了第三方怎么办？</dt>
+                                    <dd>云问机器人和一般的第三方软件一样都是要授权的，因此您对接了第三方软件之后是无法再对接我们的系统的。如果您想使用机器人，可以通过其他的方式哦，如果有类似问题就拨打电话025-66048806联系我们的人工客服吧！</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>7、怎么修改微信的欢迎词？</dt>
+                                    <dd>第一步：“系统管理”->“机器人设置”；<br>
+                                        第二步：“生效渠道”选择“微信”；<br>
+                                        第三步：填写机器人欢迎词；<br>
+                                        第四步：点击“保存”按钮。
+                                        </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="system" id="system">
+                            <h2>六、系统管理<div class="line"></div></h2>
+                            <div id="companyInfo">
+                                <h3>（一）企业基本信息</h3>
+                                <p>在您设置好企业基本信息之后，当进行问答的时候，我们的机器人自动知道自己是谁，当你问“你好”、“你是谁”之类的问题时，我们的机器人会自动带上您的公司名称和机器人名称。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么问你好，它回答的是“xxx站点的智能问答机器人xxx”？</dt>
+                                    <dd>这里我们会从后台自动匹配到您的企业名称和机器人名称，将其带入到这个答案中。只要您填写好企业和机器人名称就可以了。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、在哪里修改企业名称和机器人名称？</dt>
+                                    <dd>在“系统管理”中的“企业信息”里可以修改企业名称，“机器人设置”里可以修改机器人名称。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>3、为什么我修改了企业名称和机器人名称以后，回答并没有生效？</dt>
+                                    <dd>机器人修改的内容在已存在的会话中生效需要时间，您可以重新打开机器人的对话页面，如果依然不能改变，请拨打电话025-66048806联系人工客服。</dd>
+                                </dl>
+                            </div>
+                            <div id="config">
+                                <h3>（二）功能配置</h3>
+                                <p>由于不同用户对机器人自主聊天的功能有不同需求，有些用户希望机器人可以自动聊天，但是有的用户希望除了业务问答以外，机器人不用自动聊天，所以我们给用户设置了可以关闭自动聊天功能的开关。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么我问问题的时候机器人总是回答一些不相关的内容？</dt>
+                                    <dd>我们当无法匹配您的业务问题时，机器人会自动进入联网聊天库搜索答案，因此有时候会搜到不相关的聊天内容。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、我不希望机器人对它不知道的业务问题胡乱回答聊天内容怎么办？</dt>
+                                    <dd>可以手动关闭联网聊天库，这样机器人就不会回答非业务问题以外的复杂问题了。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>3、你们的自主聊天内容可以更多一些吗？</dt>
+                                    <dd>我们会根据您的要求定期定量更新联网聊天库的内容，聊天能力和内容会越来越多的。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="data" id="data">
+                            <h2>七、数据分析<div class="line"></div></h2>
+                            <p>云问机器人的后台拥有业内最全面、最细致的数据分析报表，每一份报表都可以下载保存，免费版本的报表只提供了一部分数据，付费版本的数据分析能力更加全面。</p>
+                            <dl class="contentDl">
+                                <dt>1、数据分析的图可以下载吗？</dt>
+                                <dd>您在数据分析的界面中看到的图表都是可以下载保存的，您在界面右侧找到下载按钮即可。若您实在找不到，可以拨打电话025-66048806联系我们的人工客服解决。</dd>
+                            </dl>
+                            <dl class="contentDl">
+                                <dt>2、数据分析的内容可以更多一些吗？</dt>
+                                <dd>如果您是免费版的后台页面，数据分析的种类还是比较少的，我们付费版的数据分析堪称业内最详细的报表。</dd>
+                            </dl>
+                        </div>
+                        <div class="personManage" id="personManage">
+                            <h2>八、人员管理<div class="line"></div></h2>
+                            <div class="userList">
+                                <h3>（一）用户列表</h3>
+                                <p>我们提供多人共同协作管理后台的功能，因此，我们是可以添加多用户的，但是这是付费版才会有的功能。该列表列出了所有可以管理后台的人员，管理员不可以被删除。</p>
+                                <dl class="contentDl">
+                                    <dt>1、为什么我没有办法删除原来申请的号？</dt>
+                                    <dd>申请该后台的用户我们默认其为管理员，是无法被删除掉的。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、我想添加多个可以管理该后台的用户可以吗？</dt>
+                                    <dd>可以的，我们的付费版拥有这个功能。</dd>
+                                </dl>
+                            </div>
+                            <div id="userLog">
+                                <h3>（二）访客日志</h3>
+                                <p>我们的后台为您提供了一个访问您机器人聊天页面的列表，该列表细分了不同途径、停留时间、访问次数等多个参数，在这里，您所有访客和机器人对话的情况，都可以及时查看。</p>
+                                <dl class="contentDl">
+                                    <dt>1、我可以看到聊天记录吗？</dt>
+                                    <dd>可以，我们的访客日志中有查看聊天记录这个功能，您点击“查看聊天记录”便可查看所有聊天内容。</dd>
+                                </dl>
+                                <dl class="contentDl">
+                                    <dt>2、我可以看到每天从网页和微信分别访问我们机器人的情况吗？</dt>
+                                    <dd>可以，您通过访客日志便可以查看每天从不同方式访问您机器人的情况，从而对您的营销部署等行为有着重要的意义。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="doc-content-list">
+                            <h4>文档帮助目录</h4>
+                            <ul class="oUl">
+                                <li class="oneLi">
+                                    <p rel="平台介绍">
+                                        <a class="oneA" href="#plantForm">一、平台介绍</a>
+                                    </p>
+                                </li>
+                                <li class="oneLi">
+                                    <p rel="新手指引">
+                                        <a class="oneA" href="#newGuide">二、新手指引</a>
+                                    </p>
+                                </li>
+                                <li class="oneLi hasUl">
+                                    <p rel="知识库">
+                                        <span></span>
+                                        <a class="oneA" href="#knowledge">三、知识库</a>
+                                    </p>
+                                    <ul class="twoUl">
+                                        <li class="twoLi"><a href="#addQuestion">（一）添加问题</a></li>
+                                        <li class="twoLi"><a href="#flowIntro">（二）流程介绍</a></li>
+                                        <li class="twoLi"><a href="#importQue">（三）导入问题</a></li>
+                                        <li class="twoLi"><a href="#intelLearn">（四）智能学习</a></li>
+                                        <li class="twoLi"><a href="#unknowQue">（五）未知问题</a></li>
+                                        <li class="twoLi"><a href="#ignore">（六）永久忽略</a></li>
+                                        <li class="twoLi"><a href="#synonym">（七）同义词</a></li>
+                                        <li class="twoLi"><a href="#Professional">（八）专业名词</a></li>
+                                        <li class="twoLi"><a href="#ChatLibrary">（九）聊天库</a></li>
+                                    </ul>
+                                </li>
+                                <li class="oneLi hasUl">
+                                    <p rel="接入网站">
+                                        <span></span>
+                                        <a class="oneA" href="#netWork">四、接入网站</a>
+                                    </p>
+                                    <ul class="twoUl">
+                                        <li class="twoLi"><a href="#getCode">（一）获取代码</a></li>
+                                    </ul>
+                                </li>
+                                <li class="oneLi hasUl">
+                                    <p rel="对接微信">
+                                        <span></span>
+                                        <a class="oneA" href="#weixin">五、对接微信</a>
+                                    </p>
+                                    <ul class="twoUl">
+                                        <li class="twoLi"><a href="#gongzhonghao">（一）对接公众号教程</a></li>
+                                        <li class="twoLi"><a href="#menuList">（二）自定义菜单使用</a></li>
+                                    </ul>
+                                </li>
+                                <li class="oneLi hasUl">
+                                    <p rel="系统管理">
+                                        <span></span>
+                                        <a class="oneA" href="#system">六、系统管理</a>
+                                    </p>
+                                    <ul class="twoUl">
+                                        <li class="twoLi"><a href="#companyInfo">（一）企业基本信息</a></li>
+                                        <li class="twoLi"><a href="#config">（二）功能配制</a></li>
+                                    </ul>
+                                </li>
+                                <li class="oneLi">
+                                    <p rel="数据分析">
+                                        <a class="oneA" href="#data">七、数据分析</a>
+                                    </p>
+                                </li>
+                                <li class="oneLi hasUl">
+                                    <p rel="人员管理">
+                                        <span></span>
+                                        <a class="oneA" href="#personManage">八、人员管理</a>
+                                    </p>
+                                    <ul class="twoUl">
+                                        <li class="twoLi"><a href="#userList">（一）用户列表</a></li>
+                                        <li class="twoLi"><a href="#userLog">（二）访客日志</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../../common.js"></script>
+<script src="../js/iyunwen_helpDetail.js"></script>
+</html>

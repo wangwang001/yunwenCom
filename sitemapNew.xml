@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<title>XML SiteMap</title>
+<style type="text/css">
+	body{background-color:#FFFFFF;margin:20px;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;}
+	h1{color:#0099CC;}
+	a,a:hover{color:#000;font-family:"Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana}
+	#intro{background-color:#CFEBF7;border:1px #2580B2 solid;padding:15px 10px 15px 10px;margin:10px 0px 10px 0px;line-height:20px;min-width:900px;}
+	#myTable{font-size:11px;list-style:none;margin:10px 0px 10px 0px;padding:0px;width:100%;min-width:804px;}
+	#myTable li{list-style-type:none;width:100%;min-width:404px;height:20px;line-height:20px;display:inline-block;clear:both;}
+	#myTable li .T1-h{float:left;font-weight:bold;min-width:300px;}
+	#myTable li .T2-h{width:200px;float:right;font-weight:bold;}
+	#myTable li .T3-h{width:200px;float:right;font-weight:bold;}
+	#myTable li .T4-h{width:100px;float:right;font-weight:bold;}
+	#myTable li .T1{float:left;min-width:300px;}
+	#myTable li .T2{width:200px;float:right;}
+	#myTable li .T3{width:200px;float:right;}
+	#myTable li .T4{width:100px;float:right;}
+	#footer{padding:2px;margin:0px;font-size:8pt;color:gray;min-width:900px;}
+	#footer a{color:gray;}
+	.myClear{clear:both;}
+</style>
+</head>
+<body>
+	<h1>XML Sitemap</h1>
+	<div id="intro">
+		This is a XML Sitemap which is supposed to be processed by search engines like <a href="http://www.google.com">Google</a>, <a href="http://search.msn.com">MSN Search</a> and <a href="http://www.yahoo.com">Yahoo</a>.<br />
+		With such a sitemap, it's much easier for the crawlers to see the complete structure of your site and retrieve it more efficiently.
+	</div>
+	<ul id="myTable">
+		<li>
+			<div class="T1-h">URL</div>
+			<div class="T2-h">Last Change</div>
+			<div class="T3-h">Change Frequency</div>
+			<div class="T4-h">Priority</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com" title="智能客服_聊天机器人_客服机器人-云问科技">http://www.iyunwen.com</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">100%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/index.html" title="智能客服_聊天机器人_客服机器人-云问科技">http://www.iyunwen.com/index.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">80%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_about.html" title="关于我们_智能客服机器人_智能IVR-云问科技">http://www.iyunwen.com/src/html/iyunwen_about.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_news.html" title="新闻资讯-客服机器人-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_news.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_customer.html" title="智能客服-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_customer.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_goverment.html" title="智能政务-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_goverment.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_hardware.html" title="智能硬件-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_hardware.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_helpCenter.html" title="帮助中心-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_helpCenter.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_helpDetail.html?id=" title="帮助中心-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_helpDetail.html?id=</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_product.html" title="产品_客服系统_机器客服-云问科技">http://www.iyunwen.com/src/html/iyunwen_product.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_smartSetting.html" title="智能助手-云问免费智能问答机器人">http://www.iyunwen.com/src/html/iyunwen_smartSetting.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+		<li>
+			<div class="T1"><a href="http://www.iyunwen.com/src/html/iyunwen_technology.html" title="产品_客服系统_机器客服-云问科技">http://www.iyunwen.com/src/html/iyunwen_technology.html</a></div>
+			<div class="T2">2018-04-28 17:57</div>
+			<div class="T3">Always</div>
+			<div class="T4">40%</div>
+		</li>
+	</ul>
+</body>
+</html>

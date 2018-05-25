@@ -1,0 +1,173 @@
+/* 右侧固定区域 */
+.fixedRight{
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+.fixedRight p{
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #666;
+}
+.fixedRight img{
+    width: 88px;
+}
+.fixedRight .backTop{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.mainFooter{
+    height: auto;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.mainFooter div{
+    display: inline-block;
+    cursor: pointer;
+    width: 130px;
+    height: 34px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 34px;
+    background: #f6f6f6;
+    border: 1px solid #dcdcdc;
+}
+.mainFooter div a{
+    color: #666;
+}
+
+.iyunwen_article{
+    height: 70px;
+    background: #182761;
+}
+.article_banner{
+    background: #f6f6f6;
+    padding-bottom: 40px;
+    height: 100%;
+    min-height: 760px;
+}
+.article_banner .breadcrumb{
+    background: none;
+}
+.article_banner .ariContainer{
+    background: #fff;
+    padding-top: 40px;
+    min-height: 640px;
+    height:auto;
+    overflow:hidden;
+}
+.ariContainer .leftAr hr{
+    height: 0px;
+    border-bottom: 2px solid #000;
+}
+.article_banner .ariHead{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5; 
+    padding-bottom:20px
+}
+.article_banner .ariContainer h1{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+.article_banner .ariContainer .author{
+    line-height: 40px;
+    color: #838383;
+}
+.ariMain{
+    width: 100%;
+    margin-top: 40px;
+}
+.ariMain img{
+    display: block;
+    width:100%;
+    margin: 10px auto;
+}
+.ariMain p{
+    margin:20px auto;
+    color: rgb(108, 108, 106);
+    line-height:24px;
+    font-size:14px;
+}
+.ariMain span{
+    display: block;
+    margin:20px auto;
+    color: rgb(160, 160, 160);
+    line-height:24px;
+    word-wrap:break-word!important;
+}
+.ariMain333 p{
+    color: #333;
+    font-size:15px;
+}
+.ariMain17 p{
+    font-size:17px;
+}
+.ariMain span.flag{
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+}
+.ariMain span.red{
+    color: rgb(229, 2, 2);
+}
+.ariMain span.blue{
+    color: rgb(95, 156, 239);
+}
+.ariMain span.green{
+    color: rgb(176, 228, 219);
+    display: inherit;
+}
+.ariMain span.orange{
+    color: rgb(249, 110, 87);
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+}
+.ariMain .text-center b{
+    font-size: 18px;
+    color: rgb(108, 108, 106);
+}
+.ariMain .text-right b{
+    cursor: pointer;
+}
+.ariMain .text-right b a{
+    color: #666;
+}
+.rightAr h2{
+    color: #666 !important;
+    background: #f6f6f6;
+    font-size: 16px;
+    line-height: 34px;
+    text-indent: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.rightAr .recommendUl{
+    height: auto;
+    overflow: hidden;
+}
+.rightAr .recommendUl li{
+    list-style: disc inside url('../img/news/blueCircle.png');
+    height:32px;
+    line-height: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-bottom:1px solid #dcdcdc;
+}
+.rightAr .recommendUl li a{
+    color:#666; 
+}
+@media (max-width:480px){
+    .fixedRight{
+        display: none;
+    }
+    .mainFooter div{
+        margin-right: 0;
+    }
+    .text-center img{
+        width:100% !important;
+    }
+}

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能客服-云问免费智能问答机器人</title>
+    <link rel="shortcut icon" href="../../src/img/iyunwen_logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../css/iyunwen_solution.css">
+</head>
+<body>
+    <!-- 顶部公共菜单 -->
+    <div class="iyunwen-header">
+        <div class="container">
+            <div class="iyunwen-nav">
+                <a class="iyunwen-logo" href="../../index.html">
+                    <img src="../../src/img/logo_ai.png" alt="服务机器人，云问科技">
+                </a>
+                <ul class="iyunwen-nav-list">
+                    <li class="li50"><a href="../../index.html">首页</a></li>
+                    <li class="has-child">
+                        <a href="javascript:;">产品介绍<i class="glyphicon glyphicon-menu-right pull-right hidden-sm hidden-md hidden-lg"></i></a>
+                        <div class="product_T child-list-container">
+                            <ul class="child-list">
+                                <li><a href="./iyunwen_product.html">产品概述</a></li>
+                                <li class="last-child"><a href="./iyunwen_technology.html">核心技术</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-child active">
+                        <a href="javascript:;">解决方案<i class="glyphicon glyphicon-menu-right pull-right hidden-sm hidden-md hidden-lg"></i></a>
+                        <div class="solution_C child-list-container">
+                            <ul class="child-list">
+                                <li><a href="./iyunwen_customer.html">智能客服</a></li>
+                                <li><a href="./iyunwen_smartSetting.html">企业助手</a></li>
+                                <li><a href="./iyunwen_goverment.html">智慧政务</a></li>
+                                <li class="last-child"><a href="./iyunwen_hardware.html">智能硬件</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="iyunwen-link"><a href="./iyunwen_about.html">关于云问</a></li>
+                    <li class="iyunwen-last-link"><a href="./iyunwen_news.html">新闻资讯</a></li>
+                    <li class="iyunwen-reg"><a href="http://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">免费注册</a></li>
+                    <li class="iyunwen-login"><a href="http://v3.faqrobot.org/login.html" target="_blank" rel="nofollow">登录</a></li>
+                </ul>
+                <div class="toogle-button-holder"><a class="dg-nav-mobile-button m-close" href="javascript:;"><span class="dg-button-img"></span></a><a class="dg-nav-mobile-button m-more" href="javascript:;"><span class="dg-button-img"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧固定区域 -->
+    <div class="fixedBox">
+        <ul class="fixedBoxList">
+            <li style="display: block;" id="cartboxs" class="fixeBoxLi cart_bd">
+                <span class="fixeBoxSpan hotline"></span><strong>全国热线</strong>
+                <div class="cartBox chatBoxAfter hide">
+                    <img style="width:18px;height:18px;margin: 0 5px 4px 0;vertical-align: middle !important;" src="../../src/img/phone.png" alt="全国热线">
+                    <div style="padding: 14px 0;font-size: 16px;display:inline-block;">025-66048806</div>
+                </div>
+            </li>
+            <li class="fixeBoxLi Service"> 
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3385946249&amp;site=qq&amp;menu=yes" rel="nofollow"><span class="fixeBoxSpan onlineKefu"></span> <strong>在线客服</strong></a>
+            </li>
+            <li style="display: none;" id="cartboxs" class="fixeBoxLi cart_bd">
+                <span class="fixeBoxSpan chatting"></span> <strong>扫码交流</strong>
+                <div class="joinddQHover chatBoxAfter hide">
+                    <div>
+                        <img style="width:90px;height:90px;padding:5px;" src="../../src/img/dingding.jpg" alt="扫码交流">
+                        <span>使用钉钉扫码加入</span>
+                    </div>
+                </div>
+            </li>
+            <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan backTop"></span> <strong>返回顶部</strong> </li>
+        </ul>
+    </div>
+    <!-- 智能客服banner -->
+    <div class="iyunwen_solution iyunwen_customer row">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6">
+                <h2 class="title">智能客服</h2>
+                <p>全方位智能服务为核心，建设全渠道智能服务机器人</p>
+                <a class="lg-button" href="https://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">立即体验</a>
+            </div>
+            <div class="customerBanner col-xs-12 col-sm-12">
+                <ul>
+                    <li class="checked online">
+                        <a href="##">
+                            <img class="small hide" src="../img/solution/online.png" alt="电商"/>
+                            <img class="big" src="../img/solution/big_online.png"  alt="电商"/>
+                            <span>电商</span>
+                        </a>
+                    </li>
+                    <li class="Finance">
+                        <a href="##">
+                            <img class="small" src="../img/solution/Finance.png"  alt="金融"/>
+                            <img class="big hide" src="../img/solution/big_Finance.png" alt="金融"/>
+                            <span>金融</span>
+                        </a>
+                    </li>
+                    <li class="IT">
+                        <a href="##">
+                            <img class="small" src="../img/solution/IT.png" alt="IT"/>
+                            <img class="big hide" src="../img/solution/big_IT.png" alt="IT"/>
+                            <span>IT</span>
+                        </a>
+                    </li>
+                    <li class="education">
+                        <a href="##">
+                            <img class="small" src="../img/solution/education.png" alt="文化教育"/>
+                            <img class="big hide" src="../img/solution/big_education.png" alt="文化教育"/>
+                            <span>文化教育</span>
+                        </a>
+                    </li>
+                    <li class="elePro">
+                        <a href="##">
+                            <img class="small" src="../img/solution/elePro.png" alt="电子产品"/>
+                            <img class="big hide" src="../img/solution/big_elePro.png" alt="电子产品"/>
+                            <span>电子产品</span>
+                        </a>
+                    </li>
+                    <li class="services">
+                        <a href="##">
+                            <img class="small" src="../img/solution/services.png" alt="消费服务"/>
+                            <img class="big hide" src="../img/solution/big_services.png" alt="消费服务"/>
+                            <span>消费服务</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 电商部分 -->
+    <div id="online" class="navContent">
+        <!-- 行业痛点及需求 -->
+        <div class="painPoint-container">
+            <div class="container">
+                <h2 class="title">行业痛点及需求</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">线上咨询量庞大</h4>
+                                <p class="text">随着互联网电商行业的发展，在线服务规模逐步扩大，全人工模式的客户服务工作，不仅增加企业人力资源成本，更加大客服覆盖率及客户满意度压力。</p>
+                                <a><img src="../img/solution/online_pain1.png" alt="智能客服，线上咨询量庞大"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">全渠道咨询尚未整合</h4>
+                                <p class="text">由于多元化渠道营销服务工作的开展，没有一个集成智能机器人来整合所有的渠道，造成了信息资源和数据的分散化，给企业的长效发展带来阻力。</p>
+                                <a><img src="../img/solution/online_pain2.png" alt="在线客服，全渠道咨询尚未整合"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">数据统计困难</h4>
+                                <p class="text">电商业务咨询场景反复，访客数据统计维度广。在数据统计模块，给统计分析人员带来不小的难题与工作量。</p>
+                                <a><img class="gov_pain2" src="../img/solution/online_pain3.png" alt="客服系统，数据统计困难"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution-container solutionOne">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>解决方案</h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>人机协同服务机制</h3>
+                            <p>云问的智能机器人服务系统为用户和人工智能提供了各类引导性业务服务。智能推荐，动态匹配引导顾客问答，平滑人工切换，提升访客咨询体验满意度。</p>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="../img/solution/online_so1.png" alt="智能客服机器人，人机协同服务机制">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionTwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-7">
+                            <img src="../img/solution/online_so2.png" alt="聊天机器人，用户精准营销">
+                        </div>
+                        <div class="col-md-5 right-solution">
+                            <h3>用户精准营销</h3>
+                            <p>机器人可以主动搜集个性数据，通过访客分析、问答分析、热点分析，可以更准确地了解到访客最关心和最需要的是什么，并进行智能推荐，让营销活动更加精准。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionThree">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>多维度报表</h3>
+                            <p>强大的数据分析体系，图文结合，自动生成各类报表，方便统计员随时调用，助力企业高效运转。</p>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="../img/solution/online_so3.png" alt="在线客服，多维度报表">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例个数 -->
+        <div class="case-container">
+            <div class="container">
+                <h4>目前已有超过40000家用户选择云问，覆盖近60个行业</h4>
+            </div>
+        </div>
+        <!-- 客户案例 -->
+        <div class="Case-container sixCase">
+            <div class="container">
+                <h2 class="onlineCase">客户案例</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 firstCase">
+                            <img src="../img/solution/online_case1.png" alt="拼多多">
+                            <p>拼多多</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/online_case2.png" alt="自如">
+                            <p>自如</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/online_case3.png" alt="蜜芽">
+                            <p>蜜芽</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/online_case4.png" alt="当当网">
+                            <p>当当网</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/online_case5.png" alt="欧冶云商">
+                            <p>欧冶云商</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/online_case6.png" alt="猪八戒网">
+                            <p>猪八戒网</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ceseIntroduce">
+                        <p>拼多多是国内目前主流的社交电商平台，用户通过发起和朋友、家人、邻居等的拼团，凝聚更多人的力量，用更低的价格买到更好的东西，体会更多的实惠和乐。云问的智能客服机器人系统帮助拼多多节省更多的人工客服成本，充分提升了客户体验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 金融部分 -->
+    <div id="finance" class="navContent hide">
+        <!-- 行业痛点及需求 -->
+        <div class="painPoint-container">
+            <div class="container">
+                <h2 class="title">行业痛点及需求</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">海量客户咨询</h4>
+                                <p class="text">以人工客服为主的金融行业，难以实现全天候的及时响应机制，如采用三班倒的机制来提供“7*24小时”的咨询服务，将加大客服成本支出。</p>
+                                <a><img src="../img/solution/finance_pain1.png" alt="智能IVR，海量客户咨询"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">服务渠道单一</h4>
+                                <p class="text">金融业访客咨询途径多为电话咨询，线上咨询入口少，且客服答复话术难以统一，降低访客咨询满意度。</p>
+                                <a><img class="gov_pain2" src="../img/solution/finance_pain2.png" alt="服务渠道单一"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">复杂业务场景</h4>
+                                <p class="text">访客咨询业务场景复杂，客户查询困难，缺乏自主化平台。</p>
+                                <a><img class="gov_pain2" src="../img/solution/finance_pain3.png" alt="复杂业务场景"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution-container solutionOne">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>解决方案</h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>人工辅助调用平台</h3>
+                            <p>全时段智能客服，为客服人员提供在线客户服务平台，提供客服坐席台功能，方便快捷地调用机器人知识库，提升客服工作效率。</p>
+                        </div>
+                        <div class="col-lg-6 col-md-7">
+                            <img src="../img/solution/finance_so1.png" alt="人工辅助调用平台">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionTwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-lg-6 col-md-7" style="margin-top:-34px;">
+                            <img src="../img/solution/finance_so2.png" alt="全渠道统一智能服务">
+                        </div>
+                        <div class="col-md-5 right-solution">
+                            <h3>全渠道统一智能服务</h3>
+                            <p>云问智能机器人可以无缝对接企业网页、APP、微信、微博、H5及钉钉等多渠道平台，统一管理知识库，后台维护更简便。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionThree">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>快捷服务办理平台</h3>
+                            <p>访客自助查询跳转入口，在咨询页面添加查订单、查积分、优惠券等快捷入口，并可根据咨询数据生成热点咨询问题。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../img/solution/finance_so3.png" alt="快捷服务办理平台">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例个数 -->
+        <div class="case-container">
+            <div class="container">
+                <h4>目前已有超过40000家用户选择云问，覆盖近60个行业</h4>
+            </div>
+        </div>
+        <!-- 客户案例 -->
+        <div class="Case-container fiveCase">
+            <div class="container">
+                <h2 class="financeCase">客户案例</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-lg-1 col-md-1 col-sm-2"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 firstCase">
+                            <img src="../img/solution/finance_case1.png" alt="太平人寿">
+                            <p>太平人寿</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/finance_case2.png" alt="工商银行">
+                            <p>工商银行</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/finance_case3.png" alt="中国邮政">
+                            <p>中国邮政</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/finance_case4.png" alt="PPmoney">
+                            <p>PPmoney</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/finance_case5.png" alt="生命人寿">
+                            <p>生命人寿</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ceseIntroduce">
+                        <p>太平人寿保险有限公司是全国知名寿险企业，并连续8年获得惠誉国际BBB+评级，云问智能应答系统目前帮助太平人寿用户解决了约80多万条咨询，准确率达到了95%以上，收获了用户的一致好评。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- IT部分 -->
+    <div id="it" class="navContent hide">
+        <!-- 行业痛点及需求 -->
+        <div class="painPoint-container">
+            <div class="container">
+                <h2 class="title">行业痛点及需求</h2>
+                <div class="row">
+                    <div class="col-sm-3 col-md-6">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="../img/solution/IT_pain2.png" alt="业务咨询量增多">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading levelTitle">业务咨询量增多</h4>
+                                <p class="text">随着IT行业的不断发展，业务量逐渐增加，客服部门的咨询量越来越大，使得工作人员应接不暇，客户服务体验下降。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="../img/solution/IT_pain1.png" alt="数据无法整合和利用">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading levelTitle">数据无法整合和利用</h4>
+                                <p class="text">长期的咨询积累了相当多的业务数据，可是没有一个系统让这些数据得到统一整合以及有效利用，形成了资源的浪费。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution-container solutionOne">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>解决方案</h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>智能回答、毫秒级响应</h3>
+                            <p>客服回答用户问题时，可以智能调用机器人语义搜索能力，大大缩短客服响应时间。结合人工客服与智能机器人的优势之处，人工智能进一步补充了人工的不足，大大提升了用户的服务体验。</p>
+                        </div>
+                        <div class="col-lg-6 col-md-7">
+                            <img src="../img/solution/it_so1.png" alt="智能回答、毫秒级响应">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionTwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-7">
+                            <img src="../img/solution/it_so2.png" alt="深度的数据分析">
+                        </div>
+                        <div class="col-md-5 right-solution">
+                            <h3>深度的数据分析</h3>
+                            <p>云问拥有业内最全的数据分析体系，并可以形成图表、下载保存，为IT企业的用户营销和长久发展提供详实可依的大数据基础。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例个数 -->
+        <div class="case-container">
+            <div class="container">
+                <h4>目前已有超过40000家用户选择云问，覆盖近60个行业</h4>
+            </div>
+        </div>
+        <!-- 客户案例 -->
+        <div class="Case-container fiveCase">
+            <div class="container">
+                <h2 class="itCase">客户案例</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-lg-1 col-md-1 col-sm-2"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 firstCase">
+                            <img src="../img/solution/it_case1.png" alt="西奥">
+                            <p>西奥</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/it_case2.png" alt="360商城">
+                            <p>360商城</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/it_case3.png" alt="中创">
+                            <p>中创</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/it_case4.png" alt="盛大游戏">
+                            <p>盛大游戏</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/it_case5.png" alt="金蝶">
+                            <p>金蝶</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ceseIntroduce">
+                        <p>西奥科技由西奥亚洲基金与澳大利亚AVS科技共同发起成立，是中国领先的智能化产品及解决方案的专业制造商和供应商，“国家级”高新科技企业。西奥科技与云问合作推出的智能问答机器人在官网中以售后咨询的角色分担着很大一部分人工客服的工作，并且回答准确率高达95%以上。在人工干预的基础上，机器人的作用越来越重要，为西奥科技的整体服务更加智能、高效、简洁提供了强有力的支持，用户体验也随着机器人的长期使用变得越来越好。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 文化教育部分 -->
+    <div id="education" class="navContent hide">
+        <!-- 行业痛点及需求 -->
+        <div class="painPoint-container">
+            <div class="container">
+                <h2 class="title">行业痛点及需求</h2>
+                <div class="row">
+                    <div class="col-sm-3 col-md-6">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="../img/solution/education_pain2.png" alt="简单重复的工作逐步增加">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading levelTitle">简单重复的工作逐步增加</h4>
+                                <p class="text">教改后教师的授课任务更重，而常见的例如“我到深圳出差的补助是多少”、“预备党员需要多久转正”、“转专业的条件是什么”等等大量重复简单的问题占据了教师很多时间。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="../img/solution/education_pain1.png" alt="缺乏统一的知识库管理">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading levelTitle">缺乏统一的知识库管理</h4>
+                                <p class="text">现在高校的很多常见问题还停留在历史数据中，没有及时更新，更加没有添加维护，文件制度或政策方针只是发布出去，并没有后续的持续跟进，或分散在各职能部门，导致教师或学生仍然多部门重复咨询，缺乏统一的校级知识库管控体系。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution-container solutionOne">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>解决方案</h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>机器替代人工</h3>
+                            <p>云问机器人解放了大量的人力，让教师可以有更多的时间做好教学工作，而不是一直在重复回答学生或其他老师简单的咨询问题。</p>
+                        </div>
+                        <div class="col-lg-7 col-md-7">
+                            <img src="../img/solution/education_so1.png" alt="机器替代人工">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionTwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-7">
+                            <img src="../img/solution/education_so2.png" alt="科学的知识库体系">
+                        </div>
+                        <div class="col-md-5 right-solution">
+                            <h3>科学的知识库体系</h3>
+                            <p>云问机器人有知识分类管理体系、知识库管理权限控制体系等，做到快捷、方便地查询，简单、高效地搭建，后期维护更轻松。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionThree">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>迅速响应及解决</h3>
+                            <p>实现全天候、无间断地服务全校师生，省去了繁琐的询问环节，毫秒级响应，提升了工作、学习效率。</p>
+                        </div>
+                        <div class="col-lg-6 col-md-7">
+                            <img src="../img/solution/education_so3.png" alt="迅速响应及解决">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例个数 -->
+        <div class="case-container">
+            <div class="container">
+                <h4>目前已有超过40000家用户选择云问，覆盖近60个行业</h4>
+            </div>
+        </div>
+        <!-- 客户案例 -->
+        <div class="Case-container fiveCase">
+            <div class="container">
+                <h2 class="educationCase">客户案例</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-lg-1 col-md-1 col-sm-2"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 firstCase">
+                            <img src="../img/solution/education_case1.png" alt="学而思">
+                            <p>学而思</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/education_case2.png" alt="赛壹赛">
+                            <p>赛壹赛</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/education_case3.png" alt="成隆">
+                            <p>成隆</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/education_case4.png" alt="首都师范大学">
+                            <p>首都师范大学</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/education_case5.png" alt="西安电子科技大学">
+                            <p>西安电子科技大学</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ceseIntroduce">
+                        <p>学而思网校成立于2008年，是好未来教育集团旗下发展历史最久的中小学在线教育品牌，也是国内较早整合“互联网”与“教育”两大领域的中小学在线学习平台之一。学而思网校拥有强大的教学实力，尤其在教研和师资方面积累深厚。课程覆盖小学、初中、高中包括语文、数学、英语、物理、化学、生物在内的所有主要学科。云问智能客服系统帮助学而思更快更好地服务于广大学生和家长，全方位解答关于课程、活动等一系列相关问题。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 电子产品部分 -->
+    <div id="elePro" class="navContent hide">
+        <!-- 行业痛点及需求 -->
+        <div class="painPoint-container">
+            <div class="container">
+                <h2 class="title">行业痛点及需求</h2>
+                <div class="row">
+                    <div class="col-sm-3 col-md-6">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="../img/solution/elePro_pain2.png" alt="咨询量巨大">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading levelTitle">咨询量巨大</h4>
+                                <p class="text">电子产品售前、售后的咨询量大，人工客服应接不暇。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="../img/solution/elePro_pain1.png" alt="信息利用率低">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading levelTitle">信息利用率低</h4>
+                                <p class="text">售后维修复杂、难点多，维修人员的培训成本较大，没有一个统一的信息平台共享维修流程及相关数据。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution-container solutionOne">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>解决方案</h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>全时段智能客服机器人</h3>
+                            <p>云问智能机器人能够全时段在线，及时地解答客户售前、售后的问题，在与客户交互的过程中能大大减轻人工客服的工作量，收集客户的需求信息，以良好的态度给予客户需要的答案。</p>
+                        </div>
+                        <div class="col-lg-6 col-md-7">
+                            <img src="../img/solution/elePro_so1.png" alt="全时段智能客服机器人">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionTwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-7">
+                            <img src="../img/solution/elePro_so2.png" alt="搭建专业维修知识库">
+                        </div>
+                        <div class="col-md-5 right-solution">
+                            <h3>搭建专业维修知识库</h3>
+                            <p>各类业务系统的核心操作指示乃至整个维修流程、操作模块全部可以询问机器人，大大提升了售后维修效率。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionThree">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>全面节约成本</h3>
+                            <p>机器人与人工协同合作，售前售后的客服人员无需再增加；成立专属知识库，知识快速调用，客服部门、维修部门等培训成本得以控制。</p>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="../img/solution/elePro_so3.png" alt="全面节约成本">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例个数 -->
+        <div class="case-container">
+            <div class="container">
+                <h4>目前已有超过40000家用户选择云问，覆盖近60个行业</h4>
+            </div>
+        </div>
+        <!-- 客户案例 -->
+        <div class="Case-container sixCase">
+            <div class="container">
+                <h2 class="eleProCase">客户案例</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 firstCase">
+                            <img src="../img/solution/elePro_case6.png" alt="美的">
+                            <p>美的</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/elePro_case1.png" alt="海尔">
+                            <p>海尔</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/elePro_case2.png" alt="海康威视">
+                            <p>海康威视</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/elePro_case3.png" alt="中控">
+                            <p>中控</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/elePro_case4.png" alt="OPPO">
+                            <p>OPPO</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/elePro_case5.png" alt="一加">
+                            <p>一加</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ceseIntroduce">
+                        <p>美的集团是一家领先的消费电器、暖通空调、机器人及工业自动化系统的科技企业集团，于1968年成立于中国广东，迄今已建立遍布全球业务平台。美的在世界范围内拥有约200家子公司、60多个海外分支机构，员工3.5万人。因此，企业内部关于人事、财务、IT以及各类业务产品常见的问题咨询量非常庞大。在引入云问企业内部智能机器人之后，加速企业效率的同时大大解放了重复工作，增加了企业创新力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 消费服务部分 -->
+    <div id="services" class="navContent hide">
+        <!-- 行业痛点及需求 -->
+        <div class="painPoint-container">
+            <div class="container">
+                <h2 class="title">行业痛点及需求</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">服务渠道分散</h4>
+                                <p class="text">没有一个统一的全渠道服务系统把网页、APP、微信等平台的客服资源和数据整合，造成了资源的浪费、数据的分散等问题。</p>
+                                <a><img class="gov_pain2" src="../img/solution/services_pain1.png" alt="服务渠道分散"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">咨询量激增</h4>
+                                <p class="text">随着线下门店的增长，越来越多的客户需要在线上平台进行咨询、查找以及更多相关服务，有限的人工客服显然不能满足需求，客户等待时间较长，造成较差的用户体验。</p>
+                                <a><img src="../img/solution/services_pain2.png" alt="咨询量激增"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="levelTitle">培训效果不佳</h4>
+                                <p class="text">各渠道、各平台的客服很难集中起来统一培训，并且人工客服的学习能力也参差不齐，学习效果很难得到保证。</p>
+                                <a><img class="gov_pain2" src="../img/solution/services_pain3.png" alt="培训效果不佳"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution-container solutionOne">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>解决方案</h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>全渠道覆盖</h3>
+                            <p>目前云问机器人可以覆盖包括微博、微信、APP、web页面、H5、论坛、支付宝、大屏、实体机器人等在内的多渠道终端服务，多场景与客户实时互动，轻松服务各访问群体，并且支持将这些渠道进行统一管理以及数据集中统计。</p>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="../img/solution/services_so1.png" alt="全渠道覆盖">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionTwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-lg-6 col-md-7">
+                            <img src="../img/solution/services_so2.png" alt="常见问题全解答">
+                        </div>
+                        <div class="col-md-5 right-solution">
+                            <h3>常见问题全解答</h3>
+                            <p>云问团队从语义处理的角度帮助客户一起梳理出行业知识点，以知识本体的模式添加知识库，建立可复用的模板，从而构建一个科学的知识库体系，因此，云问机器人可以回答关于企业95%以上的常见业务问题，平均在1毫秒内给出访客想要的回答。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-container solutionThree">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2></h2>
+                        <div class="col-md-5 left-solution">
+                            <h3>促进降本增效</h3>
+                            <p>服务同样规模用户群体的客服人数降低60%，客户服务信息化支出降低30%-80%，客户服务管理支出降低60%。为企业节省了大量客服成本投入。</p>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="../img/solution/services_so3.png" alt="促进降本增效">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例个数 -->
+        <div class="case-container">
+            <div class="container">
+                <h4>目前已有超过40000家用户选择云问，覆盖近60个行业</h4>
+            </div>
+        </div>
+        <!-- 客户案例 -->
+        <div class="Case-container fiveCase">
+            <div class="container">
+                <h2 class="servicesCase">客户案例</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-lg-1 col-md-1 col-sm-2"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 firstCase">
+                            <img src="../img/solution/services_case1.png" alt="如家">
+                            <p>如家</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/services_case2.png" alt="无限极">
+                            <p>无限极</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/services_case3.png" alt="贝因美">
+                            <p>贝因美</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/services_case4.png" alt="凯翼">
+                            <p>凯翼</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <img src="../img/solution/services_case5.png" alt="华住">
+                            <p>华住</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ceseIntroduce">
+                        <p>首旅如家酒店集团是国内连锁酒店龙头企业，包含如家、莫泰、和颐等近20个品牌，全国3500多家门店，近千万注册会员，拥有员工三万余名。云问携手如家，通过网页、APP、微信等多个渠道为宾客和内部员工提供客服咨询应用的解决方案，此举开创了连锁酒店行业咨询服务新纪元。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部公共部分 -->
+    <div class="contact-container">
+        <div class="contact-part1 text-center">
+            <h3 class="text-center">即刻拥有您的专属机器人</h3>
+            <a class="iyunwen-btn" href="https://v3.faqrobot.org/register.html" target="_blank" rel="nofollow">马上体验</a>
+        </div>
+        <div class="contact-part2">
+            <div class="container">
+                <h4>联系我们</h4>
+                <ul class="contact-info row">
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            北京市朝阳区建国路88号SOHO现代城D座909室
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            赵先生 18511321172
+                        </p>
+                    </li>
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            南京市江宁区胜利路89号紫金研发创业中心3号楼4层
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            market@faqrobot.org
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            025-66048806
+                        </p>
+                    </li>
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            广州市天河区林和西路167号威尼国际大厦836室
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-road"></i>
+                            负责区域：广东、广西、湖南、福建、海南
+                        </p>
+                        <p class="contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            何小姐 18620991991
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="contact-wechat row">
+                    <li class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="../../src/img/iyunwen_robotQrCode.png" alt="云问科技微信服务号">
+                        <h4>云问科技微信服务号</h4>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="../../src/img/iyunwen_QrCode.png" alt="云问科技微信订阅号">
+                        <h4>云问科技微信订阅号</h4>
+                    </li>
+                    <li class="line col-lg-1 col-md-1 col-sm-1"></li>
+                    <li class="col-lg-4 col-md-4 col-sm-4">
+                        <p>
+                            <a href="./iyunwen_helpCenter.html" target="_blank"><button class="btn help-center">帮助中心</button></a>
+                        </p>
+                        <p>
+                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3385946249&amp;site=qq&amp;menu=yes" rel="nofollow"><button class="btn online-service">在线客服</button></a>
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <div class="iyunwen-copyright">
+                    <ul class="footer_nav">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="./iyunwen_product.html">产品介绍</a></li>
+                        <li><a href="./iyunwen_customer.html">解决方案</a></li>
+                        <li><a href="./iyunwen_about.html">关于云问</a></li>
+                        <li><a href="./iyunwen_news.html">新闻资讯</a></li>
+                        <li><a href="https://v3.faqrobot.org/register.html" rel="nofollow">免费注册</a></li>
+                        <li><a href="https://v3.faqrobot.org/login.html" rel="nofollow">登录</a></li>
+                    </ul>
+                    <hr>
+                    <p>
+                        Copyright &copy; 2012 - 2018 南京云问网络科技有限公司 版权所有&nbsp;&nbsp;
+                        <!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273375137'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273375137%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> -->
+                    </p>
+                    <p>
+                        <a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow">网站备案编号：苏ICP备10216663号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!-- <script src="../js/wow.js"></script> -->
+<script src="../../common.js"></script>
+<script src="../js/iyunwen_solution.js"></script>
+<script src="../js/iyunwen_customer.js"></script>
+</html>

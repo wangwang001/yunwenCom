@@ -1,0 +1,518 @@
+@charset "UTF-8";
+/* 样式重置 */
+body, html, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, textarea, p, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+body, html {
+  font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC",  "WenQuanYi Micro Hei", sans-serif;
+  cursor: default;
+  /* min-width: 1200px; */
+}
+@media (min-width:480px) and (max-width:1330px){
+  body,html{
+    min-width: 1330px;
+    word-wrap:break-word;
+    word-break:break-all;
+  }
+}
+ul, ol, dl {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #2f96f4 !important;
+}
+
+iframe {
+  width: 100%;
+  color: #2f96f4;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2 {
+  color: #333 !important;
+}
+
+/* 顶部公共菜单样式 */
+.iyunwen-header {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  z-index: 222;
+}
+.iyunwen-header .iyunwen-nav {
+  width: 100%;
+  margin: 0 auto 0;
+  height: 70px;
+}
+.iyunwen-header .iyunwen-nav a {
+  color: #fff;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-logo {
+  display: block;
+  float: left;
+  line-height: 60px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list {
+  display: block;
+  float: right;
+  position: static;
+  width: 80%;
+  text-align: center;
+  padding-left: 0px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list .li50 {
+  width: 50px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list .li150 {
+  width: 150px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li {
+  position: relative;
+  display: inline-block;
+  width: 12%;
+  /* margin: 0 2% 0 0; */
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.active a{
+  color: #2f96f4;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > li.has-child > a {
+  cursor: default;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > .child-list-container {
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin: 0;
+  top: 40px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > .child-list-container > .child-list {
+  list-style: none;
+  background-color: #04234b;
+  padding: 0;
+  white-space: nowrap;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > .child-list-container > .child-list > .last-child {
+  border-bottom: none;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > .child-list-container > .child-list > li {
+  border-bottom: 1px solid #030a34;
+  height: 30px;
+  line-height: 30px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > .child-list-container > .child-list > li > a {
+  color: #fff;
+  font-size: 14px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li:hover {
+  border-bottom: 3px solid #2f96f4;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-reg a {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-reg a:hover {
+  border-color: #2f96f4;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > .iyunwen-reg:hover {
+  border-bottom: none;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > .iyunwen-login:hover {
+  border-bottom: none;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-last-link {
+  margin-right: 4%;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-reg {
+  width: 16%;
+}
+.iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-login {
+  margin-right: 0;
+}
+
+.iyunwen-btn {
+  margin-top: 80px;
+  border: 1px solid #000;
+  background: transparent;
+  border-radius: 0px;
+  padding: 8px 25px;
+  transition: color .3s ease-in-out,background .3s ease-in-out;
+}
+.iyunwen-btn:hover {
+  color: #373d41;
+  background: #fff;
+}
+
+.fixedBox {
+  width: 70px;
+  position: fixed;
+  right: 0;
+  top: 382px;
+  z-index: 222;
+  color: #fff;
+}
+.fixedBox .fixedBoxList .fixeBoxLi {
+  margin: 1px auto 5px;
+  padding: 4px 1px 8px;
+  width: 60px;
+  height: 66px;
+  text-align: center;
+  position: relative;
+  background: rgba(47, 150, 244, 0.7);
+  cursor: pointer;
+}
+.fixedBox .fixedBoxList .fixeBoxLi a,.fixedBox .fixedBoxList .fixeBoxLi a:hover{
+  color: #fff !important;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .hide {
+  display: none;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .fixeBoxSpan {
+  margin: 0px auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+  cursor: pointer;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .chatBoxAfter {
+  background: white;
+  left: -142px;
+  top: -33px;
+  width: 108px;
+  height: 124px;
+  position: absolute;
+  z-index: 9999;
+  color: #000;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .chatBoxAfter span {
+  display: block;
+  font-size: 12px;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .chatBoxAfter:after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border-width: 5px 3px 5px 3px;
+  border-color: transparent transparent transparent #fff;
+  border-style: dashed dashed dashed solid;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .cartBox {
+  left: -184px;
+  top: 10px;
+  width: 155px;
+  height: 48px;
+}
+.fixedBox .fixedBoxList .fixeBoxLi strong {
+  font-weight: normal;
+  font-size: 12px;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .hotline {
+  background: url("./src/img/hotline.png") no-repeat;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .onlineKefu {
+  background: url("./src/img/onlinekefu.png") no-repeat;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .chatting {
+  background: url("./src/img/erweima.png") no-repeat;
+}
+.fixedBox .fixedBoxList .fixeBoxLi .backTop {
+  background: url("./src/img/backTop.png") no-repeat;
+}
+
+.contact-container .contact-part1 {
+  background: url("./src/img/iyunwen_bg2.png") 0% 0%/100% 100% no-repeat;
+}
+.contact-container .contact-part1 h3 {
+  color: #fff;
+  padding: 50px 0 0 0;
+}
+.contact-container .contact-part1 .iyunwen-btn {
+  display: inline-block;
+  border-color: #fff;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transition: color .3s ease-in-out;
+}
+.contact-container .contact-part1 .iyunwen-btn:hover {
+  color: #373d41 !important;
+  background: #fff;
+}
+.contact-container .contact-part2 {
+  padding: 20px;
+  background: #343b40;
+}
+.contact-container .contact-part2 h4 {
+  color: #fff;
+  font-size: 16px;
+}
+.contact-container .contact-part2 .contact-info li {
+  color: #9b9ea0;
+  padding: 20px 0;
+}
+.contact-container .contact-part2 .contact-info li:nth-child(3){
+  padding-left: 24px;
+}
+.contact-container .contact-part2 .contact-info li p {
+  padding: 5px;
+}
+.contact-container .contact-part2 .contact-info li p i {
+  color: #2f96f4;
+}
+.contact-container .contact-part2 hr {
+  border-bottom:1px solid #969494;
+  border-top: none;
+}
+.contact-container .contact-part2 .contact-wechat > li {
+  padding: 20px;
+  text-align: center;
+}
+.contact-container .contact-part2 .contact-wechat > li h4 {
+  color: #9b9ea0;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.contact-container .contact-part2 .contact-wechat > li p {
+  margin: 20px;
+  text-align: center;
+}
+.contact-container .contact-part2 .contact-wechat > li p button {
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+.contact-container .contact-part2 .contact-wechat > li p button:hover {
+  color: #373d41;
+  background: #fff;
+}
+.contact-container .contact-part2 .contact-wechat > li p .online-service {
+  background: #2f96f4;
+  border: 1px solid #2f96f4;
+  transition: all .3s ease-in-out;
+}
+.contact-container .contact-part2 .contact-wechat > li p .online-service:hover {
+  color: #373d41;
+  background: #fff;
+  border: 1px solid #fff;
+}
+.contact-container .contact-part2 .contact-wechat > li.line {
+  border-right: 1px solid #9b9ea0;
+  padding: 70px 20px 70px 0;
+}
+.contact-container .contact-part2 .iyunwen-copyright p {
+  text-align: center;
+  color: #9b9ea0;
+}
+.contact-container .contact-part2 .iyunwen-copyright p a{
+  color: #9b9ea0;
+}
+
+.iyunwen-copyright .footer_nav{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  line-height: 40px;
+}
+.iyunwen-copyright .footer_nav li{
+  float: left;
+  width: 14%;
+  text-align: center; 
+}
+.iyunwen-copyright .footer_nav li a{
+  color: #969494;
+}
+@media (min-width: 480px) {
+  .dg-header .dg-nav .toogle-button-holder {
+    display: none;
+  }
+
+  .fixedBox {
+    display: block;
+  }
+}
+@media (max-width: 770px) {
+  h1 {
+    font-size: 24px;
+  }
+  /* 导航 */
+  .iyunwen-header .iyunwen-nav {
+    width: 90%;
+    margin-top: 3%;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-logo {
+    line-height: inherit;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list {
+    opacity: 0;
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(33, 34, 49, 0.95);
+    left: 0;
+    top: 65px;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list .li50 {
+    width: 90%;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-reg{
+    width: 90%;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-reg a:hover{
+    border-color: #003751 !important;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-login {
+    margin: 0 5%;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-last-link {
+    margin: 0 5%;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li {
+    width: 90%;
+    text-align: left;
+    margin: 0 5%;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #fff;
+    height: auto;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > a {
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.iyunwen-reg a{
+    border:none;
+    border-bottom: 1px solid #003751;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > a .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: Glyphicons Halflings;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li > a > i {
+    transition: .2s;
+    margin-top: 17px;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li .child-list-container {
+    position: relative;
+    width: 100%;
+    top: 0 !important;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li .child-list-container .child-list {
+    background: none;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li .child-list-container .child-list li {
+    border-bottom: 1px solid #2f96f4;
+    height: 50px;
+    line-height: 50px;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li a {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #003751;
+    display: block;
+    padding-left: 10px;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li a:hover {
+    color: #fff !important;
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li.show-list i {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .iyunwen-header .iyunwen-nav .iyunwen-nav-list > li:hover {
+    border-bottom: none;
+  }
+  .iyunwen-header .iyunwen-nav .toogle-button-holder {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    margin: 0;
+  }
+  .iyunwen-header .iyunwen-nav .toogle-button-holder .dg-nav-mobile-button {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  .iyunwen-header .iyunwen-nav .toogle-button-holder .dg-nav-mobile-button .dg-button-img {
+    display: inline-block;
+    width: 27px;
+    height: 22px;
+    background-image: url("./src/img/m-sprite-nav.png");
+    background-size: 98px auto;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+  }
+  .iyunwen-header .iyunwen-nav .toogle-button-holder .m-close .dg-button-img {
+    display: none;
+    width: 19px;
+    height: 19px;
+    background-position: -51px 0;
+    margin-top: 5px;
+  }
+  
+  .contact-wechat li {
+    width: 50%;
+    float: left;
+  }
+  .contact-wechat .line {
+    display: none;
+  }
+  .contact-wechat .col-lg-4 {
+    width: 100%;
+    float: inherit;
+  }
+  .iyunwen-copyright .footer_nav li{
+    float: inherit;
+    width: 100%;
+  }
+  .fixedBox {
+    display: none;
+  }
+  .contact-container .contact-part2 .contact-info li:nth-child(3){
+    padding-left: 0;
+  }
+}
